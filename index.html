@@ -1,0 +1,2397 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nahid Store</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- google Montserrat  font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&amp;display=swap" rel="stylesheet">
+  </head>
+  
+  <body data-new-gr-c-s-check-loaded="14.1028.0" data-gr-ext-installed="">
+    <!-- Header section with search -->
+    <header class="container py-5">
+      <div class="row py-5 mb-5">
+        <div class="col col-lg-4">
+          <h1 class="display-3 fw-bold text-lg-start text-center hero-text">Nahid<span class="text-danger">Store</span></h1>
+        </div>
+        <div class="col-lg-8">
+          <div class="input-group input-group-lg pt-3">
+            <input id="input-field" type="text" class="form-control" placeholder="Start searching now" aria-label="Recipient's username" aria-describedby="basic-addon2">
+            <span type="button" class="btn bg-custom input-group-text border-start-0" data-toggle="button" aria-pressed="false" autocomplete="off" id="search-btn" onclick="loadProducts()">Search Now</span>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Product sections, cart -->
+    <main class="main">
+      <div class="row mb-5">
+        <div class="col-md-9 col-lg-9 col-sm-7 ps-5">
+          <div id="all-products" class="row row-cols-1 row-cols-md-3 g-4 ps-5"><div class="col" style="max-width: 26rem;"><div class="card h-100 border-0 rounded-3 card-shadow">
+                <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg" class="card-img-top product-image mx-auto p-4" alt="...">
+                <div class="card-body card-bg">
+                  <div style="min-height: 100px;">
+                    <h5 class="card-title">Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops</h5>
+                  </div>
+                  <div class="stars-outer">
+                    <div class="stars-inner" style="width: 78%"></div>
+                  </div>
+                  <p class="d-inline-block fw-bold ps-3 pt-2 mb-0 text-secondary"><span class="fs-3 text-dark">3.9 </span>/ 5 <span class="fw-normal">average rating</span></p>
+                  <p class="text-secondary">From <span class="fs-5 fw-bold text-black"> 120 </span> ratings</p>
+                  <h3 class="fw-bold text-info pb-4">$109.95</h3>
+                  <p class="card-text">Category: <span class="badge bg-warning text-dark">men's clothing</span></p>
+                </div>
+                <div class="card-footer p-0">
+                  <div class="row m-0 p-0">
+                    <div class="col-6 p-0">
+                      <button onclick="addToCart(1,109.95)" id="addToCart-btn" class="buy-now btn btn-warning w-100 rounded-0 border-0">Add to cart</button>
+                    </div>
+                    <div class="col-6 p-0">
+                      <button id="details-btn" class="btn btn-info text-white w-100 rounded-0 border-0">Details</button>
+                    </div>  
+                  </div>
+              </div></div></div><div class="col" style="max-width: 26rem;"><div class="card h-100 border-0 rounded-3 card-shadow">
+                <img src="https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg" class="card-img-top product-image mx-auto p-4" alt="...">
+                <div class="card-body card-bg">
+                  <div style="min-height: 100px;">
+                    <h5 class="card-title">Mens Casual Premium Slim Fit T-Shirts </h5>
+                  </div>
+                  <div class="stars-outer">
+                    <div class="stars-inner" style="width: 82%"></div>
+                  </div>
+                  <p class="d-inline-block fw-bold ps-3 pt-2 mb-0 text-secondary"><span class="fs-3 text-dark">4.1 </span>/ 5 <span class="fw-normal">average rating</span></p>
+                  <p class="text-secondary">From <span class="fs-5 fw-bold text-black"> 259 </span> ratings</p>
+                  <h3 class="fw-bold text-info pb-4">$22.3</h3>
+                  <p class="card-text">Category: <span class="badge bg-warning text-dark">men's clothing</span></p>
+                </div>
+                <div class="card-footer p-0">
+                  <div class="row m-0 p-0">
+                    <div class="col-6 p-0">
+                      <button onclick="addToCart(2,22.3)" id="addToCart-btn" class="buy-now btn btn-warning w-100 rounded-0 border-0">Add to cart</button>
+                    </div>
+                    <div class="col-6 p-0">
+                      <button id="details-btn" class="btn btn-info text-white w-100 rounded-0 border-0">Details</button>
+                    </div>  
+                  </div>
+              </div></div></div><div class="col" style="max-width: 26rem;"><div class="card h-100 border-0 rounded-3 card-shadow">
+                <img src="https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg" class="card-img-top product-image mx-auto p-4" alt="...">
+                <div class="card-body card-bg">
+                  <div style="min-height: 100px;">
+                    <h5 class="card-title">Mens Cotton Jacket</h5>
+                  </div>
+                  <div class="stars-outer">
+                    <div class="stars-inner" style="width: 94%"></div>
+                  </div>
+                  <p class="d-inline-block fw-bold ps-3 pt-2 mb-0 text-secondary"><span class="fs-3 text-dark">4.7 </span>/ 5 <span class="fw-normal">average rating</span></p>
+                  <p class="text-secondary">From <span class="fs-5 fw-bold text-black"> 500 </span> ratings</p>
+                  <h3 class="fw-bold text-info pb-4">$55.99</h3>
+                  <p class="card-text">Category: <span class="badge bg-warning text-dark">men's clothing</span></p>
+                </div>
+                <div class="card-footer p-0">
+                  <div class="row m-0 p-0">
+                    <div class="col-6 p-0">
+                      <button onclick="addToCart(3,55.99)" id="addToCart-btn" class="buy-now btn btn-warning w-100 rounded-0 border-0">Add to cart</button>
+                    </div>
+                    <div class="col-6 p-0">
+                      <button id="details-btn" class="btn btn-info text-white w-100 rounded-0 border-0">Details</button>
+                    </div>  
+                  </div>
+              </div></div></div><div class="col" style="max-width: 26rem;"><div class="card h-100 border-0 rounded-3 card-shadow">
+                <img src="https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg" class="card-img-top product-image mx-auto p-4" alt="...">
+                <div class="card-body card-bg">
+                  <div style="min-height: 100px;">
+                    <h5 class="card-title">Mens Casual Slim Fit</h5>
+                  </div>
+                  <div class="stars-outer">
+                    <div class="stars-inner" style="width: 42.00000000000001%"></div>
+                  </div>
+                  <p class="d-inline-block fw-bold ps-3 pt-2 mb-0 text-secondary"><span class="fs-3 text-dark">2.1 </span>/ 5 <span class="fw-normal">average rating</span></p>
+                  <p class="text-secondary">From <span class="fs-5 fw-bold text-black"> 430 </span> ratings</p>
+                  <h3 class="fw-bold text-info pb-4">$15.99</h3>
+                  <p class="card-text">Category: <span class="badge bg-warning text-dark">men's clothing</span></p>
+                </div>
+                <div class="card-footer p-0">
+                  <div class="row m-0 p-0">
+                    <div class="col-6 p-0">
+                      <button onclick="addToCart(4,15.99)" id="addToCart-btn" class="buy-now btn btn-warning w-100 rounded-0 border-0">Add to cart</button>
+                    </div>
+                    <div class="col-6 p-0">
+                      <button id="details-btn" class="btn btn-info text-white w-100 rounded-0 border-0">Details</button>
+                    </div>  
+                  </div>
+              </div></div></div><div class="col" style="max-width: 26rem;"><div class="card h-100 border-0 rounded-3 card-shadow">
+                <img src="https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg" class="card-img-top product-image mx-auto p-4" alt="...">
+                <div class="card-body card-bg">
+                  <div style="min-height: 100px;">
+                    <h5 class="card-title">John Hardy Women's Legends Naga Gold &amp; Silver Dragon Station Chain Bracelet</h5>
+                  </div>
+                  <div class="stars-outer">
+                    <div class="stars-inner" style="width: 92%"></div>
+                  </div>
+                  <p class="d-inline-block fw-bold ps-3 pt-2 mb-0 text-secondary"><span class="fs-3 text-dark">4.6 </span>/ 5 <span class="fw-normal">average rating</span></p>
+                  <p class="text-secondary">From <span class="fs-5 fw-bold text-black"> 400 </span> ratings</p>
+                  <h3 class="fw-bold text-info pb-4">$695</h3>
+                  <p class="card-text">Category: <span class="badge bg-warning text-dark">jewelery</span></p>
+                </div>
+                <div class="card-footer p-0">
+                  <div class="row m-0 p-0">
+                    <div class="col-6 p-0">
+                      <button onclick="addToCart(5,695)" id="addToCart-btn" class="buy-now btn btn-warning w-100 rounded-0 border-0">Add to cart</button>
+                    </div>
+                    <div class="col-6 p-0">
+                      <button id="details-btn" class="btn btn-info text-white w-100 rounded-0 border-0">Details</button>
+                    </div>  
+                  </div>
+              </div></div></div><div class="col" style="max-width: 26rem;"><div class="card h-100 border-0 rounded-3 card-shadow">
+                <img src="https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_QL65_ML3_.jpg" class="card-img-top product-image mx-auto p-4" alt="...">
+                <div class="card-body card-bg">
+                  <div style="min-height: 100px;">
+                    <h5 class="card-title">Solid Gold Petite Micropave </h5>
+                  </div>
+                  <div class="stars-outer">
+                    <div class="stars-inner" style="width: 78%"></div>
+                  </div>
+                  <p class="d-inline-block fw-bold ps-3 pt-2 mb-0 text-secondary"><span class="fs-3 text-dark">3.9 </span>/ 5 <span class="fw-normal">average rating</span></p>
+                  <p class="text-secondary">From <span class="fs-5 fw-bold text-black"> 70 </span> ratings</p>
+                  <h3 class="fw-bold text-info pb-4">$168</h3>
+                  <p class="card-text">Category: <span class="badge bg-warning text-dark">jewelery</span></p>
+                </div>
+                <div class="card-footer p-0">
+                  <div class="row m-0 p-0">
+                    <div class="col-6 p-0">
+                      <button onclick="addToCart(6,168)" id="addToCart-btn" class="buy-now btn btn-warning w-100 rounded-0 border-0">Add to cart</button>
+                    </div>
+                    <div class="col-6 p-0">
+                      <button id="details-btn" class="btn btn-info text-white w-100 rounded-0 border-0">Details</button>
+                    </div>  
+                  </div>
+              </div></div></div><div class="col" style="max-width: 26rem;"><div class="card h-100 border-0 rounded-3 card-shadow">
+                <img src="https://fakestoreapi.com/img/71YAIFU48IL._AC_UL640_QL65_ML3_.jpg" class="card-img-top product-image mx-auto p-4" alt="...">
+                <div class="card-body card-bg">
+                  <div style="min-height: 100px;">
+                    <h5 class="card-title">White Gold Plated Princess</h5>
+                  </div>
+                  <div class="stars-outer">
+                    <div class="stars-inner" style="width: 60%"></div>
+                  </div>
+                  <p class="d-inline-block fw-bold ps-3 pt-2 mb-0 text-secondary"><span class="fs-3 text-dark">3 </span>/ 5 <span class="fw-normal">average rating</span></p>
+                  <p class="text-secondary">From <span class="fs-5 fw-bold text-black"> 400 </span> ratings</p>
+                  <h3 class="fw-bold text-info pb-4">$9.99</h3>
+                  <p class="card-text">Category: <span class="badge bg-warning text-dark">jewelery</span></p>
+                </div>
+                <div class="card-footer p-0">
+                  <div class="row m-0 p-0">
+                    <div class="col-6 p-0">
+                      <button onclick="addToCart(7,9.99)" id="addToCart-btn" class="buy-now btn btn-warning w-100 rounded-0 border-0">Add to cart</button>
+                    </div>
+                    <div class="col-6 p-0">
+                      <button id="details-btn" class="btn btn-info text-white w-100 rounded-0 border-0">Details</button>
+                    </div>  
+                  </div>
+              </div></div></div><div class="col" style="max-width: 26rem;"><div class="card h-100 border-0 rounded-3 card-shadow">
+                <img src="https://fakestoreapi.com/img/51UDEzMJVpL._AC_UL640_QL65_ML3_.jpg" class="card-img-top product-image mx-auto p-4" alt="...">
+                <div class="card-body card-bg">
+                  <div style="min-height: 100px;">
+                    <h5 class="card-title">Pierced Owl Rose Gold Plated Stainless Steel Double</h5>
+                  </div>
+                  <div class="stars-outer">
+                    <div class="stars-inner" style="width: 38%"></div>
+                  </div>
+                  <p class="d-inline-block fw-bold ps-3 pt-2 mb-0 text-secondary"><span class="fs-3 text-dark">1.9 </span>/ 5 <span class="fw-normal">average rating</span></p>
+                  <p class="text-secondary">From <span class="fs-5 fw-bold text-black"> 100 </span> ratings</p>
+                  <h3 class="fw-bold text-info pb-4">$10.99</h3>
+                  <p class="card-text">Category: <span class="badge bg-warning text-dark">jewelery</span></p>
+                </div>
+                <div class="card-footer p-0">
+                  <div class="row m-0 p-0">
+                    <div class="col-6 p-0">
+                      <button onclick="addToCart(8,10.99)" id="addToCart-btn" class="buy-now btn btn-warning w-100 rounded-0 border-0">Add to cart</button>
+                    </div>
+                    <div class="col-6 p-0">
+                      <button id="details-btn" class="btn btn-info text-white w-100 rounded-0 border-0">Details</button>
+                    </div>  
+                  </div>
+              </div></div></div><div class="col" style="max-width: 26rem;"><div class="card h-100 border-0 rounded-3 card-shadow">
+                <img src="https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg" class="card-img-top product-image mx-auto p-4" alt="...">
+                <div class="card-body card-bg">
+                  <div style="min-height: 100px;">
+                    <h5 class="card-title">WD 2TB Elements Portable External Hard Drive - USB 3.0 </h5>
+                  </div>
+                  <div class="stars-outer">
+                    <div class="stars-inner" style="width: 65.99999999999999%"></div>
+                  </div>
+                  <p class="d-inline-block fw-bold ps-3 pt-2 mb-0 text-secondary"><span class="fs-3 text-dark">3.3 </span>/ 5 <span class="fw-normal">average rating</span></p>
+                  <p class="text-secondary">From <span class="fs-5 fw-bold text-black"> 203 </span> ratings</p>
+                  <h3 class="fw-bold text-info pb-4">$64</h3>
+                  <p class="card-text">Category: <span class="badge bg-warning text-dark">electronics</span></p>
+                </div>
+                <div class="card-footer p-0">
+                  <div class="row m-0 p-0">
+                    <div class="col-6 p-0">
+                      <button onclick="addToCart(9,64)" id="addToCart-btn" class="buy-now btn btn-warning w-100 rounded-0 border-0">Add to cart</button>
+                    </div>
+                    <div class="col-6 p-0">
+                      <button id="details-btn" class="btn btn-info text-white w-100 rounded-0 border-0">Details</button>
+                    </div>  
+                  </div>
+              </div></div></div><div class="col" style="max-width: 26rem;"><div class="card h-100 border-0 rounded-3 card-shadow">
+                <img src="https://fakestoreapi.com/img/61U7T1koQqL._AC_SX679_.jpg" class="card-img-top product-image mx-auto p-4" alt="...">
+                <div class="card-body card-bg">
+                  <div style="min-height: 100px;">
+                    <h5 class="card-title">SanDisk SSD PLUS 1TB Internal SSD - SATA III 6 Gb/s</h5>
+                  </div>
+                  <div class="stars-outer">
+                    <div class="stars-inner" style="width: 57.99999999999999%"></div>
+                  </div>
+                  <p class="d-inline-block fw-bold ps-3 pt-2 mb-0 text-secondary"><span class="fs-3 text-dark">2.9 </span>/ 5 <span class="fw-normal">average rating</span></p>
+                  <p class="text-secondary">From <span class="fs-5 fw-bold text-black"> 470 </span> ratings</p>
+                  <h3 class="fw-bold text-info pb-4">$109</h3>
+                  <p class="card-text">Category: <span class="badge bg-warning text-dark">electronics</span></p>
+                </div>
+                <div class="card-footer p-0">
+                  <div class="row m-0 p-0">
+                    <div class="col-6 p-0">
+                      <button onclick="addToCart(10,109)" id="addToCart-btn" class="buy-now btn btn-warning w-100 rounded-0 border-0">Add to cart</button>
+                    </div>
+                    <div class="col-6 p-0">
+                      <button id="details-btn" class="btn btn-info text-white w-100 rounded-0 border-0">Details</button>
+                    </div>  
+                  </div>
+              </div></div></div><div class="col" style="max-width: 26rem;"><div class="card h-100 border-0 rounded-3 card-shadow">
+                <img src="https://fakestoreapi.com/img/71kWymZ+c+L._AC_SX679_.jpg" class="card-img-top product-image mx-auto p-4" alt="...">
+                <div class="card-body card-bg">
+                  <div style="min-height: 100px;">
+                    <h5 class="card-title">Silicon Power 256GB SSD 3D NAND A55 SLC Cache Performance Boost SATA III 2.5</h5>
+                  </div>
+                  <div class="stars-outer">
+                    <div class="stars-inner" style="width: 96%"></div>
+                  </div>
+                  <p class="d-inline-block fw-bold ps-3 pt-2 mb-0 text-secondary"><span class="fs-3 text-dark">4.8 </span>/ 5 <span class="fw-normal">average rating</span></p>
+                  <p class="text-secondary">From <span class="fs-5 fw-bold text-black"> 319 </span> ratings</p>
+                  <h3 class="fw-bold text-info pb-4">$109</h3>
+                  <p class="card-text">Category: <span class="badge bg-warning text-dark">electronics</span></p>
+                </div>
+                <div class="card-footer p-0">
+                  <div class="row m-0 p-0">
+                    <div class="col-6 p-0">
+                      <button onclick="addToCart(11,109)" id="addToCart-btn" class="buy-now btn btn-warning w-100 rounded-0 border-0">Add to cart</button>
+                    </div>
+                    <div class="col-6 p-0">
+                      <button id="details-btn" class="btn btn-info text-white w-100 rounded-0 border-0">Details</button>
+                    </div>  
+                  </div>
+              </div></div></div><div class="col" style="max-width: 26rem;"><div class="card h-100 border-0 rounded-3 card-shadow">
+                <img src="https://fakestoreapi.com/img/61mtL65D4cL._AC_SX679_.jpg" class="card-img-top product-image mx-auto p-4" alt="...">
+                <div class="card-body card-bg">
+                  <div style="min-height: 100px;">
+                    <h5 class="card-title">WD 4TB Gaming Drive Works with Playstation 4 Portable External Hard Drive</h5>
+                  </div>
+                  <div class="stars-outer">
+                    <div class="stars-inner" style="width: 96%"></div>
+                  </div>
+                  <p class="d-inline-block fw-bold ps-3 pt-2 mb-0 text-secondary"><span class="fs-3 text-dark">4.8 </span>/ 5 <span class="fw-normal">average rating</span></p>
+                  <p class="text-secondary">From <span class="fs-5 fw-bold text-black"> 400 </span> ratings</p>
+                  <h3 class="fw-bold text-info pb-4">$114</h3>
+                  <p class="card-text">Category: <span class="badge bg-warning text-dark">electronics</span></p>
+                </div>
+                <div class="card-footer p-0">
+                  <div class="row m-0 p-0">
+                    <div class="col-6 p-0">
+                      <button onclick="addToCart(12,114)" id="addToCart-btn" class="buy-now btn btn-warning w-100 rounded-0 border-0">Add to cart</button>
+                    </div>
+                    <div class="col-6 p-0">
+                      <button id="details-btn" class="btn btn-info text-white w-100 rounded-0 border-0">Details</button>
+                    </div>  
+                  </div>
+              </div></div></div><div class="col" style="max-width: 26rem;"><div class="card h-100 border-0 rounded-3 card-shadow">
+                <img src="https://fakestoreapi.com/img/81QpkIctqPL._AC_SX679_.jpg" class="card-img-top product-image mx-auto p-4" alt="...">
+                <div class="card-body card-bg">
+                  <div style="min-height: 100px;">
+                    <h5 class="card-title">Acer SB220Q bi 21.5 inches Full HD (1920 x 1080) IPS Ultra-Thin</h5>
+                  </div>
+                  <div class="stars-outer">
+                    <div class="stars-inner" style="width: 57.99999999999999%"></div>
+                  </div>
+                  <p class="d-inline-block fw-bold ps-3 pt-2 mb-0 text-secondary"><span class="fs-3 text-dark">2.9 </span>/ 5 <span class="fw-normal">average rating</span></p>
+                  <p class="text-secondary">From <span class="fs-5 fw-bold text-black"> 250 </span> ratings</p>
+                  <h3 class="fw-bold text-info pb-4">$599</h3>
+                  <p class="card-text">Category: <span class="badge bg-warning text-dark">electronics</span></p>
+                </div>
+                <div class="card-footer p-0">
+                  <div class="row m-0 p-0">
+                    <div class="col-6 p-0">
+                      <button onclick="addToCart(13,599)" id="addToCart-btn" class="buy-now btn btn-warning w-100 rounded-0 border-0">Add to cart</button>
+                    </div>
+                    <div class="col-6 p-0">
+                      <button id="details-btn" class="btn btn-info text-white w-100 rounded-0 border-0">Details</button>
+                    </div>  
+                  </div>
+              </div></div></div><div class="col" style="max-width: 26rem;"><div class="card h-100 border-0 rounded-3 card-shadow">
+                <img src="https://fakestoreapi.com/img/81Zt42ioCgL._AC_SX679_.jpg" class="card-img-top product-image mx-auto p-4" alt="...">
+                <div class="card-body card-bg">
+                  <div style="min-height: 100px;">
+                    <h5 class="card-title">Samsung 49-Inch CHG90 144Hz Curved Gaming Monitor (LC49HG90DMNXZA) – Super Ultrawide Screen QLED </h5>
+                  </div>
+                  <div class="stars-outer">
+                    <div class="stars-inner" style="width: 44.00000000000001%"></div>
+                  </div>
+                  <p class="d-inline-block fw-bold ps-3 pt-2 mb-0 text-secondary"><span class="fs-3 text-dark">2.2 </span>/ 5 <span class="fw-normal">average rating</span></p>
+                  <p class="text-secondary">From <span class="fs-5 fw-bold text-black"> 140 </span> ratings</p>
+                  <h3 class="fw-bold text-info pb-4">$999.99</h3>
+                  <p class="card-text">Category: <span class="badge bg-warning text-dark">electronics</span></p>
+                </div>
+                <div class="card-footer p-0">
+                  <div class="row m-0 p-0">
+                    <div class="col-6 p-0">
+                      <button onclick="addToCart(14,999.99)" id="addToCart-btn" class="buy-now btn btn-warning w-100 rounded-0 border-0">Add to cart</button>
+                    </div>
+                    <div class="col-6 p-0">
+                      <button id="details-btn" class="btn btn-info text-white w-100 rounded-0 border-0">Details</button>
+                    </div>  
+                  </div>
+              </div></div></div><div class="col" style="max-width: 26rem;"><div class="card h-100 border-0 rounded-3 card-shadow">
+                <img src="https://fakestoreapi.com/img/51Y5NI-I5jL._AC_UX679_.jpg" class="card-img-top product-image mx-auto p-4" alt="...">
+                <div class="card-body card-bg">
+                  <div style="min-height: 100px;">
+                    <h5 class="card-title">BIYLACLESEN Women's 3-in-1 Snowboard Jacket Winter Coats</h5>
+                  </div>
+                  <div class="stars-outer">
+                    <div class="stars-inner" style="width: 52%"></div>
+                  </div>
+                  <p class="d-inline-block fw-bold ps-3 pt-2 mb-0 text-secondary"><span class="fs-3 text-dark">2.6 </span>/ 5 <span class="fw-normal">average rating</span></p>
+                  <p class="text-secondary">From <span class="fs-5 fw-bold text-black"> 235 </span> ratings</p>
+                  <h3 class="fw-bold text-info pb-4">$56.99</h3>
+                  <p class="card-text">Category: <span class="badge bg-warning text-dark">women's clothing</span></p>
+                </div>
+                <div class="card-footer p-0">
+                  <div class="row m-0 p-0">
+                    <div class="col-6 p-0">
+                      <button onclick="addToCart(15,56.99)" id="addToCart-btn" class="buy-now btn btn-warning w-100 rounded-0 border-0">Add to cart</button>
+                    </div>
+                    <div class="col-6 p-0">
+                      <button id="details-btn" class="btn btn-info text-white w-100 rounded-0 border-0">Details</button>
+                    </div>  
+                  </div>
+              </div></div></div><div class="col" style="max-width: 26rem;"><div class="card h-100 border-0 rounded-3 card-shadow">
+                <img src="https://fakestoreapi.com/img/81XH0e8fefL._AC_UY879_.jpg" class="card-img-top product-image mx-auto p-4" alt="...">
+                <div class="card-body card-bg">
+                  <div style="min-height: 100px;">
+                    <h5 class="card-title">Lock and Love Women's Removable Hooded Faux Leather Moto Biker Jacket</h5>
+                  </div>
+                  <div class="stars-outer">
+                    <div class="stars-inner" style="width: 57.99999999999999%"></div>
+                  </div>
+                  <p class="d-inline-block fw-bold ps-3 pt-2 mb-0 text-secondary"><span class="fs-3 text-dark">2.9 </span>/ 5 <span class="fw-normal">average rating</span></p>
+                  <p class="text-secondary">From <span class="fs-5 fw-bold text-black"> 340 </span> ratings</p>
+                  <h3 class="fw-bold text-info pb-4">$29.95</h3>
+                  <p class="card-text">Category: <span class="badge bg-warning text-dark">women's clothing</span></p>
+                </div>
+                <div class="card-footer p-0">
+                  <div class="row m-0 p-0">
+                    <div class="col-6 p-0">
+                      <button onclick="addToCart(16,29.95)" id="addToCart-btn" class="buy-now btn btn-warning w-100 rounded-0 border-0">Add to cart</button>
+                    </div>
+                    <div class="col-6 p-0">
+                      <button id="details-btn" class="btn btn-info text-white w-100 rounded-0 border-0">Details</button>
+                    </div>  
+                  </div>
+              </div></div></div><div class="col" style="max-width: 26rem;"><div class="card h-100 border-0 rounded-3 card-shadow">
+                <img src="https://fakestoreapi.com/img/71HblAHs5xL._AC_UY879_-2.jpg" class="card-img-top product-image mx-auto p-4" alt="...">
+                <div class="card-body card-bg">
+                  <div style="min-height: 100px;">
+                    <h5 class="card-title">Rain Jacket Women Windbreaker Striped Climbing Raincoats</h5>
+                  </div>
+                  <div class="stars-outer">
+                    <div class="stars-inner" style="width: 76%"></div>
+                  </div>
+                  <p class="d-inline-block fw-bold ps-3 pt-2 mb-0 text-secondary"><span class="fs-3 text-dark">3.8 </span>/ 5 <span class="fw-normal">average rating</span></p>
+                  <p class="text-secondary">From <span class="fs-5 fw-bold text-black"> 679 </span> ratings</p>
+                  <h3 class="fw-bold text-info pb-4">$39.99</h3>
+                  <p class="card-text">Category: <span class="badge bg-warning text-dark">women's clothing</span></p>
+                </div>
+                <div class="card-footer p-0">
+                  <div class="row m-0 p-0">
+                    <div class="col-6 p-0">
+                      <button onclick="addToCart(17,39.99)" id="addToCart-btn" class="buy-now btn btn-warning w-100 rounded-0 border-0">Add to cart</button>
+                    </div>
+                    <div class="col-6 p-0">
+                      <button id="details-btn" class="btn btn-info text-white w-100 rounded-0 border-0">Details</button>
+                    </div>  
+                  </div>
+              </div></div></div><div class="col" style="max-width: 26rem;"><div class="card h-100 border-0 rounded-3 card-shadow">
+                <img src="https://fakestoreapi.com/img/71z3kpMAYsL._AC_UY879_.jpg" class="card-img-top product-image mx-auto p-4" alt="...">
+                <div class="card-body card-bg">
+                  <div style="min-height: 100px;">
+                    <h5 class="card-title">MBJ Women's Solid Short Sleeve Boat Neck V </h5>
+                  </div>
+                  <div class="stars-outer">
+                    <div class="stars-inner" style="width: 94%"></div>
+                  </div>
+                  <p class="d-inline-block fw-bold ps-3 pt-2 mb-0 text-secondary"><span class="fs-3 text-dark">4.7 </span>/ 5 <span class="fw-normal">average rating</span></p>
+                  <p class="text-secondary">From <span class="fs-5 fw-bold text-black"> 130 </span> ratings</p>
+                  <h3 class="fw-bold text-info pb-4">$9.85</h3>
+                  <p class="card-text">Category: <span class="badge bg-warning text-dark">women's clothing</span></p>
+                </div>
+                <div class="card-footer p-0">
+                  <div class="row m-0 p-0">
+                    <div class="col-6 p-0">
+                      <button onclick="addToCart(18,9.85)" id="addToCart-btn" class="buy-now btn btn-warning w-100 rounded-0 border-0">Add to cart</button>
+                    </div>
+                    <div class="col-6 p-0">
+                      <button id="details-btn" class="btn btn-info text-white w-100 rounded-0 border-0">Details</button>
+                    </div>  
+                  </div>
+              </div></div></div><div class="col" style="max-width: 26rem;"><div class="card h-100 border-0 rounded-3 card-shadow">
+                <img src="https://fakestoreapi.com/img/51eg55uWmdL._AC_UX679_.jpg" class="card-img-top product-image mx-auto p-4" alt="...">
+                <div class="card-body card-bg">
+                  <div style="min-height: 100px;">
+                    <h5 class="card-title">Opna Women's Short Sleeve Moisture</h5>
+                  </div>
+                  <div class="stars-outer">
+                    <div class="stars-inner" style="width: 90%"></div>
+                  </div>
+                  <p class="d-inline-block fw-bold ps-3 pt-2 mb-0 text-secondary"><span class="fs-3 text-dark">4.5 </span>/ 5 <span class="fw-normal">average rating</span></p>
+                  <p class="text-secondary">From <span class="fs-5 fw-bold text-black"> 146 </span> ratings</p>
+                  <h3 class="fw-bold text-info pb-4">$7.95</h3>
+                  <p class="card-text">Category: <span class="badge bg-warning text-dark">women's clothing</span></p>
+                </div>
+                <div class="card-footer p-0">
+                  <div class="row m-0 p-0">
+                    <div class="col-6 p-0">
+                      <button onclick="addToCart(19,7.95)" id="addToCart-btn" class="buy-now btn btn-warning w-100 rounded-0 border-0">Add to cart</button>
+                    </div>
+                    <div class="col-6 p-0">
+                      <button id="details-btn" class="btn btn-info text-white w-100 rounded-0 border-0">Details</button>
+                    </div>  
+                  </div>
+              </div></div></div><div class="col" style="max-width: 26rem;"><div class="card h-100 border-0 rounded-3 card-shadow">
+                <img src="https://fakestoreapi.com/img/61pHAEJ4NML._AC_UX679_.jpg" class="card-img-top product-image mx-auto p-4" alt="...">
+                <div class="card-body card-bg">
+                  <div style="min-height: 100px;">
+                    <h5 class="card-title">DANVOUY Womens T Shirt Casual Cotton Short</h5>
+                  </div>
+                  <div class="stars-outer">
+                    <div class="stars-inner" style="width: 72%"></div>
+                  </div>
+                  <p class="d-inline-block fw-bold ps-3 pt-2 mb-0 text-secondary"><span class="fs-3 text-dark">3.6 </span>/ 5 <span class="fw-normal">average rating</span></p>
+                  <p class="text-secondary">From <span class="fs-5 fw-bold text-black"> 145 </span> ratings</p>
+                  <h3 class="fw-bold text-info pb-4">$12.99</h3>
+                  <p class="card-text">Category: <span class="badge bg-warning text-dark">women's clothing</span></p>
+                </div>
+                <div class="card-footer p-0">
+                  <div class="row m-0 p-0">
+                    <div class="col-6 p-0">
+                      <button onclick="addToCart(20,12.99)" id="addToCart-btn" class="buy-now btn btn-warning w-100 rounded-0 border-0">Add to cart</button>
+                    </div>
+                    <div class="col-6 p-0">
+                      <button id="details-btn" class="btn btn-info text-white w-100 rounded-0 border-0">Details</button>
+                    </div>  
+                  </div>
+              </div></div></div><div class="col" style="max-width: 26rem;"><div class="card h-100 border-0 rounded-3 card-shadow">
+                <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg" class="card-img-top product-image mx-auto p-4" alt="...">
+                <div class="card-body card-bg">
+                  <div style="min-height: 100px;">
+                    <h5 class="card-title">Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops</h5>
+                  </div>
+                  <div class="stars-outer">
+                    <div class="stars-inner" style="width: 78%"></div>
+                  </div>
+                  <p class="d-inline-block fw-bold ps-3 pt-2 mb-0 text-secondary"><span class="fs-3 text-dark">3.9 </span>/ 5 <span class="fw-normal">average rating</span></p>
+                  <p class="text-secondary">From <span class="fs-5 fw-bold text-black"> 120 </span> ratings</p>
+                  <h3 class="fw-bold text-info pb-4">$109.95</h3>
+                  <p class="card-text">Category: <span class="badge bg-warning text-dark">men's clothing</span></p>
+                </div>
+                <div class="card-footer p-0">
+                  <div class="row m-0 p-0">
+                    <div class="col-6 p-0">
+                      <button onclick="addToCart(1,109.95)" id="addToCart-btn" class="buy-now btn btn-warning w-100 rounded-0 border-0">Add to cart</button>
+                    </div>
+                    <div class="col-6 p-0">
+                      <button id="details-btn" class="btn btn-info text-white w-100 rounded-0 border-0">Details</button>
+                    </div>  
+                  </div>
+              </div></div></div><div class="col" style="max-width: 26rem;"><div class="card h-100 border-0 rounded-3 card-shadow">
+                <img src="https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg" class="card-img-top product-image mx-auto p-4" alt="...">
+                <div class="card-body card-bg">
+                  <div style="min-height: 100px;">
+                    <h5 class="card-title">Mens Casual Premium Slim Fit T-Shirts </h5>
+                  </div>
+                  <div class="stars-outer">
+                    <div class="stars-inner" style="width: 82%"></div>
+                  </div>
+                  <p class="d-inline-block fw-bold ps-3 pt-2 mb-0 text-secondary"><span class="fs-3 text-dark">4.1 </span>/ 5 <span class="fw-normal">average rating</span></p>
+                  <p class="text-secondary">From <span class="fs-5 fw-bold text-black"> 259 </span> ratings</p>
+                  <h3 class="fw-bold text-info pb-4">$22.3</h3>
+                  <p class="card-text">Category: <span class="badge bg-warning text-dark">men's clothing</span></p>
+                </div>
+                <div class="card-footer p-0">
+                  <div class="row m-0 p-0">
+                    <div class="col-6 p-0">
+                      <button onclick="addToCart(2,22.3)" id="addToCart-btn" class="buy-now btn btn-warning w-100 rounded-0 border-0">Add to cart</button>
+                    </div>
+                    <div class="col-6 p-0">
+                      <button id="details-btn" class="btn btn-info text-white w-100 rounded-0 border-0">Details</button>
+                    </div>  
+                  </div>
+              </div></div></div><div class="col" style="max-width: 26rem;"><div class="card h-100 border-0 rounded-3 card-shadow">
+                <img src="https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg" class="card-img-top product-image mx-auto p-4" alt="...">
+                <div class="card-body card-bg">
+                  <div style="min-height: 100px;">
+                    <h5 class="card-title">Mens Cotton Jacket</h5>
+                  </div>
+                  <div class="stars-outer">
+                    <div class="stars-inner" style="width: 94%"></div>
+                  </div>
+                  <p class="d-inline-block fw-bold ps-3 pt-2 mb-0 text-secondary"><span class="fs-3 text-dark">4.7 </span>/ 5 <span class="fw-normal">average rating</span></p>
+                  <p class="text-secondary">From <span class="fs-5 fw-bold text-black"> 500 </span> ratings</p>
+                  <h3 class="fw-bold text-info pb-4">$55.99</h3>
+                  <p class="card-text">Category: <span class="badge bg-warning text-dark">men's clothing</span></p>
+                </div>
+                <div class="card-footer p-0">
+                  <div class="row m-0 p-0">
+                    <div class="col-6 p-0">
+                      <button onclick="addToCart(3,55.99)" id="addToCart-btn" class="buy-now btn btn-warning w-100 rounded-0 border-0">Add to cart</button>
+                    </div>
+                    <div class="col-6 p-0">
+                      <button id="details-btn" class="btn btn-info text-white w-100 rounded-0 border-0">Details</button>
+                    </div>  
+                  </div>
+              </div></div></div><div class="col" style="max-width: 26rem;"><div class="card h-100 border-0 rounded-3 card-shadow">
+                <img src="https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg" class="card-img-top product-image mx-auto p-4" alt="...">
+                <div class="card-body card-bg">
+                  <div style="min-height: 100px;">
+                    <h5 class="card-title">Mens Casual Slim Fit</h5>
+                  </div>
+                  <div class="stars-outer">
+                    <div class="stars-inner" style="width: 42.00000000000001%"></div>
+                  </div>
+                  <p class="d-inline-block fw-bold ps-3 pt-2 mb-0 text-secondary"><span class="fs-3 text-dark">2.1 </span>/ 5 <span class="fw-normal">average rating</span></p>
+                  <p class="text-secondary">From <span class="fs-5 fw-bold text-black"> 430 </span> ratings</p>
+                  <h3 class="fw-bold text-info pb-4">$15.99</h3>
+                  <p class="card-text">Category: <span class="badge bg-warning text-dark">men's clothing</span></p>
+                </div>
+                <div class="card-footer p-0">
+                  <div class="row m-0 p-0">
+                    <div class="col-6 p-0">
+                      <button onclick="addToCart(4,15.99)" id="addToCart-btn" class="buy-now btn btn-warning w-100 rounded-0 border-0">Add to cart</button>
+                    </div>
+                    <div class="col-6 p-0">
+                      <button id="details-btn" class="btn btn-info text-white w-100 rounded-0 border-0">Details</button>
+                    </div>  
+                  </div>
+              </div></div></div><div class="col" style="max-width: 26rem;"><div class="card h-100 border-0 rounded-3 card-shadow">
+                <img src="https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg" class="card-img-top product-image mx-auto p-4" alt="...">
+                <div class="card-body card-bg">
+                  <div style="min-height: 100px;">
+                    <h5 class="card-title">John Hardy Women's Legends Naga Gold &amp; Silver Dragon Station Chain Bracelet</h5>
+                  </div>
+                  <div class="stars-outer">
+                    <div class="stars-inner" style="width: 92%"></div>
+                  </div>
+                  <p class="d-inline-block fw-bold ps-3 pt-2 mb-0 text-secondary"><span class="fs-3 text-dark">4.6 </span>/ 5 <span class="fw-normal">average rating</span></p>
+                  <p class="text-secondary">From <span class="fs-5 fw-bold text-black"> 400 </span> ratings</p>
+                  <h3 class="fw-bold text-info pb-4">$695</h3>
+                  <p class="card-text">Category: <span class="badge bg-warning text-dark">jewelery</span></p>
+                </div>
+                <div class="card-footer p-0">
+                  <div class="row m-0 p-0">
+                    <div class="col-6 p-0">
+                      <button onclick="addToCart(5,695)" id="addToCart-btn" class="buy-now btn btn-warning w-100 rounded-0 border-0">Add to cart</button>
+                    </div>
+                    <div class="col-6 p-0">
+                      <button id="details-btn" class="btn btn-info text-white w-100 rounded-0 border-0">Details</button>
+                    </div>  
+                  </div>
+              </div></div></div><div class="col" style="max-width: 26rem;"><div class="card h-100 border-0 rounded-3 card-shadow">
+                <img src="https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_QL65_ML3_.jpg" class="card-img-top product-image mx-auto p-4" alt="...">
+                <div class="card-body card-bg">
+                  <div style="min-height: 100px;">
+                    <h5 class="card-title">Solid Gold Petite Micropave </h5>
+                  </div>
+                  <div class="stars-outer">
+                    <div class="stars-inner" style="width: 78%"></div>
+                  </div>
+                  <p class="d-inline-block fw-bold ps-3 pt-2 mb-0 text-secondary"><span class="fs-3 text-dark">3.9 </span>/ 5 <span class="fw-normal">average rating</span></p>
+                  <p class="text-secondary">From <span class="fs-5 fw-bold text-black"> 70 </span> ratings</p>
+                  <h3 class="fw-bold text-info pb-4">$168</h3>
+                  <p class="card-text">Category: <span class="badge bg-warning text-dark">jewelery</span></p>
+                </div>
+                <div class="card-footer p-0">
+                  <div class="row m-0 p-0">
+                    <div class="col-6 p-0">
+                      <button onclick="addToCart(6,168)" id="addToCart-btn" class="buy-now btn btn-warning w-100 rounded-0 border-0">Add to cart</button>
+                    </div>
+                    <div class="col-6 p-0">
+                      <button id="details-btn" class="btn btn-info text-white w-100 rounded-0 border-0">Details</button>
+                    </div>  
+                  </div>
+              </div></div></div><div class="col" style="max-width: 26rem;"><div class="card h-100 border-0 rounded-3 card-shadow">
+                <img src="https://fakestoreapi.com/img/71YAIFU48IL._AC_UL640_QL65_ML3_.jpg" class="card-img-top product-image mx-auto p-4" alt="...">
+                <div class="card-body card-bg">
+                  <div style="min-height: 100px;">
+                    <h5 class="card-title">White Gold Plated Princess</h5>
+                  </div>
+                  <div class="stars-outer">
+                    <div class="stars-inner" style="width: 60%"></div>
+                  </div>
+                  <p class="d-inline-block fw-bold ps-3 pt-2 mb-0 text-secondary"><span class="fs-3 text-dark">3 </span>/ 5 <span class="fw-normal">average rating</span></p>
+                  <p class="text-secondary">From <span class="fs-5 fw-bold text-black"> 400 </span> ratings</p>
+                  <h3 class="fw-bold text-info pb-4">$9.99</h3>
+                  <p class="card-text">Category: <span class="badge bg-warning text-dark">jewelery</span></p>
+                </div>
+                <div class="card-footer p-0">
+                  <div class="row m-0 p-0">
+                    <div class="col-6 p-0">
+                      <button onclick="addToCart(7,9.99)" id="addToCart-btn" class="buy-now btn btn-warning w-100 rounded-0 border-0">Add to cart</button>
+                    </div>
+                    <div class="col-6 p-0">
+                      <button id="details-btn" class="btn btn-info text-white w-100 rounded-0 border-0">Details</button>
+                    </div>  
+                  </div>
+              </div></div></div><div class="col" style="max-width: 26rem;"><div class="card h-100 border-0 rounded-3 card-shadow">
+                <img src="https://fakestoreapi.com/img/51UDEzMJVpL._AC_UL640_QL65_ML3_.jpg" class="card-img-top product-image mx-auto p-4" alt="...">
+                <div class="card-body card-bg">
+                  <div style="min-height: 100px;">
+                    <h5 class="card-title">Pierced Owl Rose Gold Plated Stainless Steel Double</h5>
+                  </div>
+                  <div class="stars-outer">
+                    <div class="stars-inner" style="width: 38%"></div>
+                  </div>
+                  <p class="d-inline-block fw-bold ps-3 pt-2 mb-0 text-secondary"><span class="fs-3 text-dark">1.9 </span>/ 5 <span class="fw-normal">average rating</span></p>
+                  <p class="text-secondary">From <span class="fs-5 fw-bold text-black"> 100 </span> ratings</p>
+                  <h3 class="fw-bold text-info pb-4">$10.99</h3>
+                  <p class="card-text">Category: <span class="badge bg-warning text-dark">jewelery</span></p>
+                </div>
+                <div class="card-footer p-0">
+                  <div class="row m-0 p-0">
+                    <div class="col-6 p-0">
+                      <button onclick="addToCart(8,10.99)" id="addToCart-btn" class="buy-now btn btn-warning w-100 rounded-0 border-0">Add to cart</button>
+                    </div>
+                    <div class="col-6 p-0">
+                      <button id="details-btn" class="btn btn-info text-white w-100 rounded-0 border-0">Details</button>
+                    </div>  
+                  </div>
+              </div></div></div><div class="col" style="max-width: 26rem;"><div class="card h-100 border-0 rounded-3 card-shadow">
+                <img src="https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg" class="card-img-top product-image mx-auto p-4" alt="...">
+                <div class="card-body card-bg">
+                  <div style="min-height: 100px;">
+                    <h5 class="card-title">WD 2TB Elements Portable External Hard Drive - USB 3.0 </h5>
+                  </div>
+                  <div class="stars-outer">
+                    <div class="stars-inner" style="width: 65.99999999999999%"></div>
+                  </div>
+                  <p class="d-inline-block fw-bold ps-3 pt-2 mb-0 text-secondary"><span class="fs-3 text-dark">3.3 </span>/ 5 <span class="fw-normal">average rating</span></p>
+                  <p class="text-secondary">From <span class="fs-5 fw-bold text-black"> 203 </span> ratings</p>
+                  <h3 class="fw-bold text-info pb-4">$64</h3>
+                  <p class="card-text">Category: <span class="badge bg-warning text-dark">electronics</span></p>
+                </div>
+                <div class="card-footer p-0">
+                  <div class="row m-0 p-0">
+                    <div class="col-6 p-0">
+                      <button onclick="addToCart(9,64)" id="addToCart-btn" class="buy-now btn btn-warning w-100 rounded-0 border-0">Add to cart</button>
+                    </div>
+                    <div class="col-6 p-0">
+                      <button id="details-btn" class="btn btn-info text-white w-100 rounded-0 border-0">Details</button>
+                    </div>  
+                  </div>
+              </div></div></div><div class="col" style="max-width: 26rem;"><div class="card h-100 border-0 rounded-3 card-shadow">
+                <img src="https://fakestoreapi.com/img/61U7T1koQqL._AC_SX679_.jpg" class="card-img-top product-image mx-auto p-4" alt="...">
+                <div class="card-body card-bg">
+                  <div style="min-height: 100px;">
+                    <h5 class="card-title">SanDisk SSD PLUS 1TB Internal SSD - SATA III 6 Gb/s</h5>
+                  </div>
+                  <div class="stars-outer">
+                    <div class="stars-inner" style="width: 57.99999999999999%"></div>
+                  </div>
+                  <p class="d-inline-block fw-bold ps-3 pt-2 mb-0 text-secondary"><span class="fs-3 text-dark">2.9 </span>/ 5 <span class="fw-normal">average rating</span></p>
+                  <p class="text-secondary">From <span class="fs-5 fw-bold text-black"> 470 </span> ratings</p>
+                  <h3 class="fw-bold text-info pb-4">$109</h3>
+                  <p class="card-text">Category: <span class="badge bg-warning text-dark">electronics</span></p>
+                </div>
+                <div class="card-footer p-0">
+                  <div class="row m-0 p-0">
+                    <div class="col-6 p-0">
+                      <button onclick="addToCart(10,109)" id="addToCart-btn" class="buy-now btn btn-warning w-100 rounded-0 border-0">Add to cart</button>
+                    </div>
+                    <div class="col-6 p-0">
+                      <button id="details-btn" class="btn btn-info text-white w-100 rounded-0 border-0">Details</button>
+                    </div>  
+                  </div>
+              </div></div></div><div class="col" style="max-width: 26rem;"><div class="card h-100 border-0 rounded-3 card-shadow">
+                <img src="https://fakestoreapi.com/img/71kWymZ+c+L._AC_SX679_.jpg" class="card-img-top product-image mx-auto p-4" alt="...">
+                <div class="card-body card-bg">
+                  <div style="min-height: 100px;">
+                    <h5 class="card-title">Silicon Power 256GB SSD 3D NAND A55 SLC Cache Performance Boost SATA III 2.5</h5>
+                  </div>
+                  <div class="stars-outer">
+                    <div class="stars-inner" style="width: 96%"></div>
+                  </div>
+                  <p class="d-inline-block fw-bold ps-3 pt-2 mb-0 text-secondary"><span class="fs-3 text-dark">4.8 </span>/ 5 <span class="fw-normal">average rating</span></p>
+                  <p class="text-secondary">From <span class="fs-5 fw-bold text-black"> 319 </span> ratings</p>
+                  <h3 class="fw-bold text-info pb-4">$109</h3>
+                  <p class="card-text">Category: <span class="badge bg-warning text-dark">electronics</span></p>
+                </div>
+                <div class="card-footer p-0">
+                  <div class="row m-0 p-0">
+                    <div class="col-6 p-0">
+                      <button onclick="addToCart(11,109)" id="addToCart-btn" class="buy-now btn btn-warning w-100 rounded-0 border-0">Add to cart</button>
+                    </div>
+                    <div class="col-6 p-0">
+                      <button id="details-btn" class="btn btn-info text-white w-100 rounded-0 border-0">Details</button>
+                    </div>  
+                  </div>
+              </div></div></div><div class="col" style="max-width: 26rem;"><div class="card h-100 border-0 rounded-3 card-shadow">
+                <img src="https://fakestoreapi.com/img/61mtL65D4cL._AC_SX679_.jpg" class="card-img-top product-image mx-auto p-4" alt="...">
+                <div class="card-body card-bg">
+                  <div style="min-height: 100px;">
+                    <h5 class="card-title">WD 4TB Gaming Drive Works with Playstation 4 Portable External Hard Drive</h5>
+                  </div>
+                  <div class="stars-outer">
+                    <div class="stars-inner" style="width: 96%"></div>
+                  </div>
+                  <p class="d-inline-block fw-bold ps-3 pt-2 mb-0 text-secondary"><span class="fs-3 text-dark">4.8 </span>/ 5 <span class="fw-normal">average rating</span></p>
+                  <p class="text-secondary">From <span class="fs-5 fw-bold text-black"> 400 </span> ratings</p>
+                  <h3 class="fw-bold text-info pb-4">$114</h3>
+                  <p class="card-text">Category: <span class="badge bg-warning text-dark">electronics</span></p>
+                </div>
+                <div class="card-footer p-0">
+                  <div class="row m-0 p-0">
+                    <div class="col-6 p-0">
+                      <button onclick="addToCart(12,114)" id="addToCart-btn" class="buy-now btn btn-warning w-100 rounded-0 border-0">Add to cart</button>
+                    </div>
+                    <div class="col-6 p-0">
+                      <button id="details-btn" class="btn btn-info text-white w-100 rounded-0 border-0">Details</button>
+                    </div>  
+                  </div>
+              </div></div></div><div class="col" style="max-width: 26rem;"><div class="card h-100 border-0 rounded-3 card-shadow">
+                <img src="https://fakestoreapi.com/img/81QpkIctqPL._AC_SX679_.jpg" class="card-img-top product-image mx-auto p-4" alt="...">
+                <div class="card-body card-bg">
+                  <div style="min-height: 100px;">
+                    <h5 class="card-title">Acer SB220Q bi 21.5 inches Full HD (1920 x 1080) IPS Ultra-Thin</h5>
+                  </div>
+                  <div class="stars-outer">
+                    <div class="stars-inner" style="width: 57.99999999999999%"></div>
+                  </div>
+                  <p class="d-inline-block fw-bold ps-3 pt-2 mb-0 text-secondary"><span class="fs-3 text-dark">2.9 </span>/ 5 <span class="fw-normal">average rating</span></p>
+                  <p class="text-secondary">From <span class="fs-5 fw-bold text-black"> 250 </span> ratings</p>
+                  <h3 class="fw-bold text-info pb-4">$599</h3>
+                  <p class="card-text">Category: <span class="badge bg-warning text-dark">electronics</span></p>
+                </div>
+                <div class="card-footer p-0">
+                  <div class="row m-0 p-0">
+                    <div class="col-6 p-0">
+                      <button onclick="addToCart(13,599)" id="addToCart-btn" class="buy-now btn btn-warning w-100 rounded-0 border-0">Add to cart</button>
+                    </div>
+                    <div class="col-6 p-0">
+                      <button id="details-btn" class="btn btn-info text-white w-100 rounded-0 border-0">Details</button>
+                    </div>  
+                  </div>
+              </div></div></div><div class="col" style="max-width: 26rem;"><div class="card h-100 border-0 rounded-3 card-shadow">
+                <img src="https://fakestoreapi.com/img/81Zt42ioCgL._AC_SX679_.jpg" class="card-img-top product-image mx-auto p-4" alt="...">
+                <div class="card-body card-bg">
+                  <div style="min-height: 100px;">
+                    <h5 class="card-title">Samsung 49-Inch CHG90 144Hz Curved Gaming Monitor (LC49HG90DMNXZA) – Super Ultrawide Screen QLED </h5>
+                  </div>
+                  <div class="stars-outer">
+                    <div class="stars-inner" style="width: 44.00000000000001%"></div>
+                  </div>
+                  <p class="d-inline-block fw-bold ps-3 pt-2 mb-0 text-secondary"><span class="fs-3 text-dark">2.2 </span>/ 5 <span class="fw-normal">average rating</span></p>
+                  <p class="text-secondary">From <span class="fs-5 fw-bold text-black"> 140 </span> ratings</p>
+                  <h3 class="fw-bold text-info pb-4">$999.99</h3>
+                  <p class="card-text">Category: <span class="badge bg-warning text-dark">electronics</span></p>
+                </div>
+                <div class="card-footer p-0">
+                  <div class="row m-0 p-0">
+                    <div class="col-6 p-0">
+                      <button onclick="addToCart(14,999.99)" id="addToCart-btn" class="buy-now btn btn-warning w-100 rounded-0 border-0">Add to cart</button>
+                    </div>
+                    <div class="col-6 p-0">
+                      <button id="details-btn" class="btn btn-info text-white w-100 rounded-0 border-0">Details</button>
+                    </div>  
+                  </div>
+              </div></div></div><div class="col" style="max-width: 26rem;"><div class="card h-100 border-0 rounded-3 card-shadow">
+                <img src="https://fakestoreapi.com/img/51Y5NI-I5jL._AC_UX679_.jpg" class="card-img-top product-image mx-auto p-4" alt="...">
+                <div class="card-body card-bg">
+                  <div style="min-height: 100px;">
+                    <h5 class="card-title">BIYLACLESEN Women's 3-in-1 Snowboard Jacket Winter Coats</h5>
+                  </div>
+                  <div class="stars-outer">
+                    <div class="stars-inner" style="width: 52%"></div>
+                  </div>
+                  <p class="d-inline-block fw-bold ps-3 pt-2 mb-0 text-secondary"><span class="fs-3 text-dark">2.6 </span>/ 5 <span class="fw-normal">average rating</span></p>
+                  <p class="text-secondary">From <span class="fs-5 fw-bold text-black"> 235 </span> ratings</p>
+                  <h3 class="fw-bold text-info pb-4">$56.99</h3>
+                  <p class="card-text">Category: <span class="badge bg-warning text-dark">women's clothing</span></p>
+                </div>
+                <div class="card-footer p-0">
+                  <div class="row m-0 p-0">
+                    <div class="col-6 p-0">
+                      <button onclick="addToCart(15,56.99)" id="addToCart-btn" class="buy-now btn btn-warning w-100 rounded-0 border-0">Add to cart</button>
+                    </div>
+                    <div class="col-6 p-0">
+                      <button id="details-btn" class="btn btn-info text-white w-100 rounded-0 border-0">Details</button>
+                    </div>  
+                  </div>
+              </div></div></div><div class="col" style="max-width: 26rem;"><div class="card h-100 border-0 rounded-3 card-shadow">
+                <img src="https://fakestoreapi.com/img/81XH0e8fefL._AC_UY879_.jpg" class="card-img-top product-image mx-auto p-4" alt="...">
+                <div class="card-body card-bg">
+                  <div style="min-height: 100px;">
+                    <h5 class="card-title">Lock and Love Women's Removable Hooded Faux Leather Moto Biker Jacket</h5>
+                  </div>
+                  <div class="stars-outer">
+                    <div class="stars-inner" style="width: 57.99999999999999%"></div>
+                  </div>
+                  <p class="d-inline-block fw-bold ps-3 pt-2 mb-0 text-secondary"><span class="fs-3 text-dark">2.9 </span>/ 5 <span class="fw-normal">average rating</span></p>
+                  <p class="text-secondary">From <span class="fs-5 fw-bold text-black"> 340 </span> ratings</p>
+                  <h3 class="fw-bold text-info pb-4">$29.95</h3>
+                  <p class="card-text">Category: <span class="badge bg-warning text-dark">women's clothing</span></p>
+                </div>
+                <div class="card-footer p-0">
+                  <div class="row m-0 p-0">
+                    <div class="col-6 p-0">
+                      <button onclick="addToCart(16,29.95)" id="addToCart-btn" class="buy-now btn btn-warning w-100 rounded-0 border-0">Add to cart</button>
+                    </div>
+                    <div class="col-6 p-0">
+                      <button id="details-btn" class="btn btn-info text-white w-100 rounded-0 border-0">Details</button>
+                    </div>  
+                  </div>
+              </div></div></div><div class="col" style="max-width: 26rem;"><div class="card h-100 border-0 rounded-3 card-shadow">
+                <img src="https://fakestoreapi.com/img/71HblAHs5xL._AC_UY879_-2.jpg" class="card-img-top product-image mx-auto p-4" alt="...">
+                <div class="card-body card-bg">
+                  <div style="min-height: 100px;">
+                    <h5 class="card-title">Rain Jacket Women Windbreaker Striped Climbing Raincoats</h5>
+                  </div>
+                  <div class="stars-outer">
+                    <div class="stars-inner" style="width: 76%"></div>
+                  </div>
+                  <p class="d-inline-block fw-bold ps-3 pt-2 mb-0 text-secondary"><span class="fs-3 text-dark">3.8 </span>/ 5 <span class="fw-normal">average rating</span></p>
+                  <p class="text-secondary">From <span class="fs-5 fw-bold text-black"> 679 </span> ratings</p>
+                  <h3 class="fw-bold text-info pb-4">$39.99</h3>
+                  <p class="card-text">Category: <span class="badge bg-warning text-dark">women's clothing</span></p>
+                </div>
+                <div class="card-footer p-0">
+                  <div class="row m-0 p-0">
+                    <div class="col-6 p-0">
+                      <button onclick="addToCart(17,39.99)" id="addToCart-btn" class="buy-now btn btn-warning w-100 rounded-0 border-0">Add to cart</button>
+                    </div>
+                    <div class="col-6 p-0">
+                      <button id="details-btn" class="btn btn-info text-white w-100 rounded-0 border-0">Details</button>
+                    </div>  
+                  </div>
+              </div></div></div><div class="col" style="max-width: 26rem;"><div class="card h-100 border-0 rounded-3 card-shadow">
+                <img src="https://fakestoreapi.com/img/71z3kpMAYsL._AC_UY879_.jpg" class="card-img-top product-image mx-auto p-4" alt="...">
+                <div class="card-body card-bg">
+                  <div style="min-height: 100px;">
+                    <h5 class="card-title">MBJ Women's Solid Short Sleeve Boat Neck V </h5>
+                  </div>
+                  <div class="stars-outer">
+                    <div class="stars-inner" style="width: 94%"></div>
+                  </div>
+                  <p class="d-inline-block fw-bold ps-3 pt-2 mb-0 text-secondary"><span class="fs-3 text-dark">4.7 </span>/ 5 <span class="fw-normal">average rating</span></p>
+                  <p class="text-secondary">From <span class="fs-5 fw-bold text-black"> 130 </span> ratings</p>
+                  <h3 class="fw-bold text-info pb-4">$9.85</h3>
+                  <p class="card-text">Category: <span class="badge bg-warning text-dark">women's clothing</span></p>
+                </div>
+                <div class="card-footer p-0">
+                  <div class="row m-0 p-0">
+                    <div class="col-6 p-0">
+                      <button onclick="addToCart(18,9.85)" id="addToCart-btn" class="buy-now btn btn-warning w-100 rounded-0 border-0">Add to cart</button>
+                    </div>
+                    <div class="col-6 p-0">
+                      <button id="details-btn" class="btn btn-info text-white w-100 rounded-0 border-0">Details</button>
+                    </div>  
+                  </div>
+              </div></div></div><div class="col" style="max-width: 26rem;"><div class="card h-100 border-0 rounded-3 card-shadow">
+                <img src="https://fakestoreapi.com/img/51eg55uWmdL._AC_UX679_.jpg" class="card-img-top product-image mx-auto p-4" alt="...">
+                <div class="card-body card-bg">
+                  <div style="min-height: 100px;">
+                    <h5 class="card-title">Opna Women's Short Sleeve Moisture</h5>
+                  </div>
+                  <div class="stars-outer">
+                    <div class="stars-inner" style="width: 90%"></div>
+                  </div>
+                  <p class="d-inline-block fw-bold ps-3 pt-2 mb-0 text-secondary"><span class="fs-3 text-dark">4.5 </span>/ 5 <span class="fw-normal">average rating</span></p>
+                  <p class="text-secondary">From <span class="fs-5 fw-bold text-black"> 146 </span> ratings</p>
+                  <h3 class="fw-bold text-info pb-4">$7.95</h3>
+                  <p class="card-text">Category: <span class="badge bg-warning text-dark">women's clothing</span></p>
+                </div>
+                <div class="card-footer p-0">
+                  <div class="row m-0 p-0">
+                    <div class="col-6 p-0">
+                      <button onclick="addToCart(19,7.95)" id="addToCart-btn" class="buy-now btn btn-warning w-100 rounded-0 border-0">Add to cart</button>
+                    </div>
+                    <div class="col-6 p-0">
+                      <button id="details-btn" class="btn btn-info text-white w-100 rounded-0 border-0">Details</button>
+                    </div>  
+                  </div>
+              </div></div></div><div class="col" style="max-width: 26rem;"><div class="card h-100 border-0 rounded-3 card-shadow">
+                <img src="https://fakestoreapi.com/img/61pHAEJ4NML._AC_UX679_.jpg" class="card-img-top product-image mx-auto p-4" alt="...">
+                <div class="card-body card-bg">
+                  <div style="min-height: 100px;">
+                    <h5 class="card-title">DANVOUY Womens T Shirt Casual Cotton Short</h5>
+                  </div>
+                  <div class="stars-outer">
+                    <div class="stars-inner" style="width: 72%"></div>
+                  </div>
+                  <p class="d-inline-block fw-bold ps-3 pt-2 mb-0 text-secondary"><span class="fs-3 text-dark">3.6 </span>/ 5 <span class="fw-normal">average rating</span></p>
+                  <p class="text-secondary">From <span class="fs-5 fw-bold text-black"> 145 </span> ratings</p>
+                  <h3 class="fw-bold text-info pb-4">$12.99</h3>
+                  <p class="card-text">Category: <span class="badge bg-warning text-dark">women's clothing</span></p>
+                </div>
+                <div class="card-footer p-0">
+                  <div class="row m-0 p-0">
+                    <div class="col-6 p-0">
+                      <button onclick="addToCart(20,12.99)" id="addToCart-btn" class="buy-now btn btn-warning w-100 rounded-0 border-0">Add to cart</button>
+                    </div>
+                    <div class="col-6 p-0">
+                      <button id="details-btn" class="btn btn-info text-white w-100 rounded-0 border-0">Details</button>
+                    </div>  
+                  </div>
+              </div></div></div><div class="col" style="max-width: 26rem;"><div class="card h-100 border-0 rounded-3 card-shadow">
+                <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg" class="card-img-top product-image mx-auto p-4" alt="...">
+                <div class="card-body card-bg">
+                  <div style="min-height: 100px;">
+                    <h5 class="card-title">Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops</h5>
+                  </div>
+                  <div class="stars-outer">
+                    <div class="stars-inner" style="width: 78%"></div>
+                  </div>
+                  <p class="d-inline-block fw-bold ps-3 pt-2 mb-0 text-secondary"><span class="fs-3 text-dark">3.9 </span>/ 5 <span class="fw-normal">average rating</span></p>
+                  <p class="text-secondary">From <span class="fs-5 fw-bold text-black"> 120 </span> ratings</p>
+                  <h3 class="fw-bold text-info pb-4">$109.95</h3>
+                  <p class="card-text">Category: <span class="badge bg-warning text-dark">men's clothing</span></p>
+                </div>
+                <div class="card-footer p-0">
+                  <div class="row m-0 p-0">
+                    <div class="col-6 p-0">
+                      <button onclick="addToCart(1,109.95)" id="addToCart-btn" class="buy-now btn btn-warning w-100 rounded-0 border-0">Add to cart</button>
+                    </div>
+                    <div class="col-6 p-0">
+                      <button id="details-btn" class="btn btn-info text-white w-100 rounded-0 border-0">Details</button>
+                    </div>  
+                  </div>
+              </div></div></div><div class="col" style="max-width: 26rem;"><div class="card h-100 border-0 rounded-3 card-shadow">
+                <img src="https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg" class="card-img-top product-image mx-auto p-4" alt="...">
+                <div class="card-body card-bg">
+                  <div style="min-height: 100px;">
+                    <h5 class="card-title">Mens Casual Premium Slim Fit T-Shirts </h5>
+                  </div>
+                  <div class="stars-outer">
+                    <div class="stars-inner" style="width: 82%"></div>
+                  </div>
+                  <p class="d-inline-block fw-bold ps-3 pt-2 mb-0 text-secondary"><span class="fs-3 text-dark">4.1 </span>/ 5 <span class="fw-normal">average rating</span></p>
+                  <p class="text-secondary">From <span class="fs-5 fw-bold text-black"> 259 </span> ratings</p>
+                  <h3 class="fw-bold text-info pb-4">$22.3</h3>
+                  <p class="card-text">Category: <span class="badge bg-warning text-dark">men's clothing</span></p>
+                </div>
+                <div class="card-footer p-0">
+                  <div class="row m-0 p-0">
+                    <div class="col-6 p-0">
+                      <button onclick="addToCart(2,22.3)" id="addToCart-btn" class="buy-now btn btn-warning w-100 rounded-0 border-0">Add to cart</button>
+                    </div>
+                    <div class="col-6 p-0">
+                      <button id="details-btn" class="btn btn-info text-white w-100 rounded-0 border-0">Details</button>
+                    </div>  
+                  </div>
+              </div></div></div><div class="col" style="max-width: 26rem;"><div class="card h-100 border-0 rounded-3 card-shadow">
+                <img src="https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg" class="card-img-top product-image mx-auto p-4" alt="...">
+                <div class="card-body card-bg">
+                  <div style="min-height: 100px;">
+                    <h5 class="card-title">Mens Cotton Jacket</h5>
+                  </div>
+                  <div class="stars-outer">
+                    <div class="stars-inner" style="width: 94%"></div>
+                  </div>
+                  <p class="d-inline-block fw-bold ps-3 pt-2 mb-0 text-secondary"><span class="fs-3 text-dark">4.7 </span>/ 5 <span class="fw-normal">average rating</span></p>
+                  <p class="text-secondary">From <span class="fs-5 fw-bold text-black"> 500 </span> ratings</p>
+                  <h3 class="fw-bold text-info pb-4">$55.99</h3>
+                  <p class="card-text">Category: <span class="badge bg-warning text-dark">men's clothing</span></p>
+                </div>
+                <div class="card-footer p-0">
+                  <div class="row m-0 p-0">
+                    <div class="col-6 p-0">
+                      <button onclick="addToCart(3,55.99)" id="addToCart-btn" class="buy-now btn btn-warning w-100 rounded-0 border-0">Add to cart</button>
+                    </div>
+                    <div class="col-6 p-0">
+                      <button id="details-btn" class="btn btn-info text-white w-100 rounded-0 border-0">Details</button>
+                    </div>  
+                  </div>
+              </div></div></div><div class="col" style="max-width: 26rem;"><div class="card h-100 border-0 rounded-3 card-shadow">
+                <img src="https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg" class="card-img-top product-image mx-auto p-4" alt="...">
+                <div class="card-body card-bg">
+                  <div style="min-height: 100px;">
+                    <h5 class="card-title">Mens Casual Slim Fit</h5>
+                  </div>
+                  <div class="stars-outer">
+                    <div class="stars-inner" style="width: 42.00000000000001%"></div>
+                  </div>
+                  <p class="d-inline-block fw-bold ps-3 pt-2 mb-0 text-secondary"><span class="fs-3 text-dark">2.1 </span>/ 5 <span class="fw-normal">average rating</span></p>
+                  <p class="text-secondary">From <span class="fs-5 fw-bold text-black"> 430 </span> ratings</p>
+                  <h3 class="fw-bold text-info pb-4">$15.99</h3>
+                  <p class="card-text">Category: <span class="badge bg-warning text-dark">men's clothing</span></p>
+                </div>
+                <div class="card-footer p-0">
+                  <div class="row m-0 p-0">
+                    <div class="col-6 p-0">
+                      <button onclick="addToCart(4,15.99)" id="addToCart-btn" class="buy-now btn btn-warning w-100 rounded-0 border-0">Add to cart</button>
+                    </div>
+                    <div class="col-6 p-0">
+                      <button id="details-btn" class="btn btn-info text-white w-100 rounded-0 border-0">Details</button>
+                    </div>  
+                  </div>
+              </div></div></div><div class="col" style="max-width: 26rem;"><div class="card h-100 border-0 rounded-3 card-shadow">
+                <img src="https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg" class="card-img-top product-image mx-auto p-4" alt="...">
+                <div class="card-body card-bg">
+                  <div style="min-height: 100px;">
+                    <h5 class="card-title">John Hardy Women's Legends Naga Gold &amp; Silver Dragon Station Chain Bracelet</h5>
+                  </div>
+                  <div class="stars-outer">
+                    <div class="stars-inner" style="width: 92%"></div>
+                  </div>
+                  <p class="d-inline-block fw-bold ps-3 pt-2 mb-0 text-secondary"><span class="fs-3 text-dark">4.6 </span>/ 5 <span class="fw-normal">average rating</span></p>
+                  <p class="text-secondary">From <span class="fs-5 fw-bold text-black"> 400 </span> ratings</p>
+                  <h3 class="fw-bold text-info pb-4">$695</h3>
+                  <p class="card-text">Category: <span class="badge bg-warning text-dark">jewelery</span></p>
+                </div>
+                <div class="card-footer p-0">
+                  <div class="row m-0 p-0">
+                    <div class="col-6 p-0">
+                      <button onclick="addToCart(5,695)" id="addToCart-btn" class="buy-now btn btn-warning w-100 rounded-0 border-0">Add to cart</button>
+                    </div>
+                    <div class="col-6 p-0">
+                      <button id="details-btn" class="btn btn-info text-white w-100 rounded-0 border-0">Details</button>
+                    </div>  
+                  </div>
+              </div></div></div><div class="col" style="max-width: 26rem;"><div class="card h-100 border-0 rounded-3 card-shadow">
+                <img src="https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_QL65_ML3_.jpg" class="card-img-top product-image mx-auto p-4" alt="...">
+                <div class="card-body card-bg">
+                  <div style="min-height: 100px;">
+                    <h5 class="card-title">Solid Gold Petite Micropave </h5>
+                  </div>
+                  <div class="stars-outer">
+                    <div class="stars-inner" style="width: 78%"></div>
+                  </div>
+                  <p class="d-inline-block fw-bold ps-3 pt-2 mb-0 text-secondary"><span class="fs-3 text-dark">3.9 </span>/ 5 <span class="fw-normal">average rating</span></p>
+                  <p class="text-secondary">From <span class="fs-5 fw-bold text-black"> 70 </span> ratings</p>
+                  <h3 class="fw-bold text-info pb-4">$168</h3>
+                  <p class="card-text">Category: <span class="badge bg-warning text-dark">jewelery</span></p>
+                </div>
+                <div class="card-footer p-0">
+                  <div class="row m-0 p-0">
+                    <div class="col-6 p-0">
+                      <button onclick="addToCart(6,168)" id="addToCart-btn" class="buy-now btn btn-warning w-100 rounded-0 border-0">Add to cart</button>
+                    </div>
+                    <div class="col-6 p-0">
+                      <button id="details-btn" class="btn btn-info text-white w-100 rounded-0 border-0">Details</button>
+                    </div>  
+                  </div>
+              </div></div></div><div class="col" style="max-width: 26rem;"><div class="card h-100 border-0 rounded-3 card-shadow">
+                <img src="https://fakestoreapi.com/img/71YAIFU48IL._AC_UL640_QL65_ML3_.jpg" class="card-img-top product-image mx-auto p-4" alt="...">
+                <div class="card-body card-bg">
+                  <div style="min-height: 100px;">
+                    <h5 class="card-title">White Gold Plated Princess</h5>
+                  </div>
+                  <div class="stars-outer">
+                    <div class="stars-inner" style="width: 60%"></div>
+                  </div>
+                  <p class="d-inline-block fw-bold ps-3 pt-2 mb-0 text-secondary"><span class="fs-3 text-dark">3 </span>/ 5 <span class="fw-normal">average rating</span></p>
+                  <p class="text-secondary">From <span class="fs-5 fw-bold text-black"> 400 </span> ratings</p>
+                  <h3 class="fw-bold text-info pb-4">$9.99</h3>
+                  <p class="card-text">Category: <span class="badge bg-warning text-dark">jewelery</span></p>
+                </div>
+                <div class="card-footer p-0">
+                  <div class="row m-0 p-0">
+                    <div class="col-6 p-0">
+                      <button onclick="addToCart(7,9.99)" id="addToCart-btn" class="buy-now btn btn-warning w-100 rounded-0 border-0">Add to cart</button>
+                    </div>
+                    <div class="col-6 p-0">
+                      <button id="details-btn" class="btn btn-info text-white w-100 rounded-0 border-0">Details</button>
+                    </div>  
+                  </div>
+              </div></div></div><div class="col" style="max-width: 26rem;"><div class="card h-100 border-0 rounded-3 card-shadow">
+                <img src="https://fakestoreapi.com/img/51UDEzMJVpL._AC_UL640_QL65_ML3_.jpg" class="card-img-top product-image mx-auto p-4" alt="...">
+                <div class="card-body card-bg">
+                  <div style="min-height: 100px;">
+                    <h5 class="card-title">Pierced Owl Rose Gold Plated Stainless Steel Double</h5>
+                  </div>
+                  <div class="stars-outer">
+                    <div class="stars-inner" style="width: 38%"></div>
+                  </div>
+                  <p class="d-inline-block fw-bold ps-3 pt-2 mb-0 text-secondary"><span class="fs-3 text-dark">1.9 </span>/ 5 <span class="fw-normal">average rating</span></p>
+                  <p class="text-secondary">From <span class="fs-5 fw-bold text-black"> 100 </span> ratings</p>
+                  <h3 class="fw-bold text-info pb-4">$10.99</h3>
+                  <p class="card-text">Category: <span class="badge bg-warning text-dark">jewelery</span></p>
+                </div>
+                <div class="card-footer p-0">
+                  <div class="row m-0 p-0">
+                    <div class="col-6 p-0">
+                      <button onclick="addToCart(8,10.99)" id="addToCart-btn" class="buy-now btn btn-warning w-100 rounded-0 border-0">Add to cart</button>
+                    </div>
+                    <div class="col-6 p-0">
+                      <button id="details-btn" class="btn btn-info text-white w-100 rounded-0 border-0">Details</button>
+                    </div>  
+                  </div>
+              </div></div></div><div class="col" style="max-width: 26rem;"><div class="card h-100 border-0 rounded-3 card-shadow">
+                <img src="https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg" class="card-img-top product-image mx-auto p-4" alt="...">
+                <div class="card-body card-bg">
+                  <div style="min-height: 100px;">
+                    <h5 class="card-title">WD 2TB Elements Portable External Hard Drive - USB 3.0 </h5>
+                  </div>
+                  <div class="stars-outer">
+                    <div class="stars-inner" style="width: 65.99999999999999%"></div>
+                  </div>
+                  <p class="d-inline-block fw-bold ps-3 pt-2 mb-0 text-secondary"><span class="fs-3 text-dark">3.3 </span>/ 5 <span class="fw-normal">average rating</span></p>
+                  <p class="text-secondary">From <span class="fs-5 fw-bold text-black"> 203 </span> ratings</p>
+                  <h3 class="fw-bold text-info pb-4">$64</h3>
+                  <p class="card-text">Category: <span class="badge bg-warning text-dark">electronics</span></p>
+                </div>
+                <div class="card-footer p-0">
+                  <div class="row m-0 p-0">
+                    <div class="col-6 p-0">
+                      <button onclick="addToCart(9,64)" id="addToCart-btn" class="buy-now btn btn-warning w-100 rounded-0 border-0">Add to cart</button>
+                    </div>
+                    <div class="col-6 p-0">
+                      <button id="details-btn" class="btn btn-info text-white w-100 rounded-0 border-0">Details</button>
+                    </div>  
+                  </div>
+              </div></div></div><div class="col" style="max-width: 26rem;"><div class="card h-100 border-0 rounded-3 card-shadow">
+                <img src="https://fakestoreapi.com/img/61U7T1koQqL._AC_SX679_.jpg" class="card-img-top product-image mx-auto p-4" alt="...">
+                <div class="card-body card-bg">
+                  <div style="min-height: 100px;">
+                    <h5 class="card-title">SanDisk SSD PLUS 1TB Internal SSD - SATA III 6 Gb/s</h5>
+                  </div>
+                  <div class="stars-outer">
+                    <div class="stars-inner" style="width: 57.99999999999999%"></div>
+                  </div>
+                  <p class="d-inline-block fw-bold ps-3 pt-2 mb-0 text-secondary"><span class="fs-3 text-dark">2.9 </span>/ 5 <span class="fw-normal">average rating</span></p>
+                  <p class="text-secondary">From <span class="fs-5 fw-bold text-black"> 470 </span> ratings</p>
+                  <h3 class="fw-bold text-info pb-4">$109</h3>
+                  <p class="card-text">Category: <span class="badge bg-warning text-dark">electronics</span></p>
+                </div>
+                <div class="card-footer p-0">
+                  <div class="row m-0 p-0">
+                    <div class="col-6 p-0">
+                      <button onclick="addToCart(10,109)" id="addToCart-btn" class="buy-now btn btn-warning w-100 rounded-0 border-0">Add to cart</button>
+                    </div>
+                    <div class="col-6 p-0">
+                      <button id="details-btn" class="btn btn-info text-white w-100 rounded-0 border-0">Details</button>
+                    </div>  
+                  </div>
+              </div></div></div><div class="col" style="max-width: 26rem;"><div class="card h-100 border-0 rounded-3 card-shadow">
+                <img src="https://fakestoreapi.com/img/71kWymZ+c+L._AC_SX679_.jpg" class="card-img-top product-image mx-auto p-4" alt="...">
+                <div class="card-body card-bg">
+                  <div style="min-height: 100px;">
+                    <h5 class="card-title">Silicon Power 256GB SSD 3D NAND A55 SLC Cache Performance Boost SATA III 2.5</h5>
+                  </div>
+                  <div class="stars-outer">
+                    <div class="stars-inner" style="width: 96%"></div>
+                  </div>
+                  <p class="d-inline-block fw-bold ps-3 pt-2 mb-0 text-secondary"><span class="fs-3 text-dark">4.8 </span>/ 5 <span class="fw-normal">average rating</span></p>
+                  <p class="text-secondary">From <span class="fs-5 fw-bold text-black"> 319 </span> ratings</p>
+                  <h3 class="fw-bold text-info pb-4">$109</h3>
+                  <p class="card-text">Category: <span class="badge bg-warning text-dark">electronics</span></p>
+                </div>
+                <div class="card-footer p-0">
+                  <div class="row m-0 p-0">
+                    <div class="col-6 p-0">
+                      <button onclick="addToCart(11,109)" id="addToCart-btn" class="buy-now btn btn-warning w-100 rounded-0 border-0">Add to cart</button>
+                    </div>
+                    <div class="col-6 p-0">
+                      <button id="details-btn" class="btn btn-info text-white w-100 rounded-0 border-0">Details</button>
+                    </div>  
+                  </div>
+              </div></div></div><div class="col" style="max-width: 26rem;"><div class="card h-100 border-0 rounded-3 card-shadow">
+                <img src="https://fakestoreapi.com/img/61mtL65D4cL._AC_SX679_.jpg" class="card-img-top product-image mx-auto p-4" alt="...">
+                <div class="card-body card-bg">
+                  <div style="min-height: 100px;">
+                    <h5 class="card-title">WD 4TB Gaming Drive Works with Playstation 4 Portable External Hard Drive</h5>
+                  </div>
+                  <div class="stars-outer">
+                    <div class="stars-inner" style="width: 96%"></div>
+                  </div>
+                  <p class="d-inline-block fw-bold ps-3 pt-2 mb-0 text-secondary"><span class="fs-3 text-dark">4.8 </span>/ 5 <span class="fw-normal">average rating</span></p>
+                  <p class="text-secondary">From <span class="fs-5 fw-bold text-black"> 400 </span> ratings</p>
+                  <h3 class="fw-bold text-info pb-4">$114</h3>
+                  <p class="card-text">Category: <span class="badge bg-warning text-dark">electronics</span></p>
+                </div>
+                <div class="card-footer p-0">
+                  <div class="row m-0 p-0">
+                    <div class="col-6 p-0">
+                      <button onclick="addToCart(12,114)" id="addToCart-btn" class="buy-now btn btn-warning w-100 rounded-0 border-0">Add to cart</button>
+                    </div>
+                    <div class="col-6 p-0">
+                      <button id="details-btn" class="btn btn-info text-white w-100 rounded-0 border-0">Details</button>
+                    </div>  
+                  </div>
+              </div></div></div><div class="col" style="max-width: 26rem;"><div class="card h-100 border-0 rounded-3 card-shadow">
+                <img src="https://fakestoreapi.com/img/81QpkIctqPL._AC_SX679_.jpg" class="card-img-top product-image mx-auto p-4" alt="...">
+                <div class="card-body card-bg">
+                  <div style="min-height: 100px;">
+                    <h5 class="card-title">Acer SB220Q bi 21.5 inches Full HD (1920 x 1080) IPS Ultra-Thin</h5>
+                  </div>
+                  <div class="stars-outer">
+                    <div class="stars-inner" style="width: 57.99999999999999%"></div>
+                  </div>
+                  <p class="d-inline-block fw-bold ps-3 pt-2 mb-0 text-secondary"><span class="fs-3 text-dark">2.9 </span>/ 5 <span class="fw-normal">average rating</span></p>
+                  <p class="text-secondary">From <span class="fs-5 fw-bold text-black"> 250 </span> ratings</p>
+                  <h3 class="fw-bold text-info pb-4">$599</h3>
+                  <p class="card-text">Category: <span class="badge bg-warning text-dark">electronics</span></p>
+                </div>
+                <div class="card-footer p-0">
+                  <div class="row m-0 p-0">
+                    <div class="col-6 p-0">
+                      <button onclick="addToCart(13,599)" id="addToCart-btn" class="buy-now btn btn-warning w-100 rounded-0 border-0">Add to cart</button>
+                    </div>
+                    <div class="col-6 p-0">
+                      <button id="details-btn" class="btn btn-info text-white w-100 rounded-0 border-0">Details</button>
+                    </div>  
+                  </div>
+              </div></div></div><div class="col" style="max-width: 26rem;"><div class="card h-100 border-0 rounded-3 card-shadow">
+                <img src="https://fakestoreapi.com/img/81Zt42ioCgL._AC_SX679_.jpg" class="card-img-top product-image mx-auto p-4" alt="...">
+                <div class="card-body card-bg">
+                  <div style="min-height: 100px;">
+                    <h5 class="card-title">Samsung 49-Inch CHG90 144Hz Curved Gaming Monitor (LC49HG90DMNXZA) – Super Ultrawide Screen QLED </h5>
+                  </div>
+                  <div class="stars-outer">
+                    <div class="stars-inner" style="width: 44.00000000000001%"></div>
+                  </div>
+                  <p class="d-inline-block fw-bold ps-3 pt-2 mb-0 text-secondary"><span class="fs-3 text-dark">2.2 </span>/ 5 <span class="fw-normal">average rating</span></p>
+                  <p class="text-secondary">From <span class="fs-5 fw-bold text-black"> 140 </span> ratings</p>
+                  <h3 class="fw-bold text-info pb-4">$999.99</h3>
+                  <p class="card-text">Category: <span class="badge bg-warning text-dark">electronics</span></p>
+                </div>
+                <div class="card-footer p-0">
+                  <div class="row m-0 p-0">
+                    <div class="col-6 p-0">
+                      <button onclick="addToCart(14,999.99)" id="addToCart-btn" class="buy-now btn btn-warning w-100 rounded-0 border-0">Add to cart</button>
+                    </div>
+                    <div class="col-6 p-0">
+                      <button id="details-btn" class="btn btn-info text-white w-100 rounded-0 border-0">Details</button>
+                    </div>  
+                  </div>
+              </div></div></div><div class="col" style="max-width: 26rem;"><div class="card h-100 border-0 rounded-3 card-shadow">
+                <img src="https://fakestoreapi.com/img/51Y5NI-I5jL._AC_UX679_.jpg" class="card-img-top product-image mx-auto p-4" alt="...">
+                <div class="card-body card-bg">
+                  <div style="min-height: 100px;">
+                    <h5 class="card-title">BIYLACLESEN Women's 3-in-1 Snowboard Jacket Winter Coats</h5>
+                  </div>
+                  <div class="stars-outer">
+                    <div class="stars-inner" style="width: 52%"></div>
+                  </div>
+                  <p class="d-inline-block fw-bold ps-3 pt-2 mb-0 text-secondary"><span class="fs-3 text-dark">2.6 </span>/ 5 <span class="fw-normal">average rating</span></p>
+                  <p class="text-secondary">From <span class="fs-5 fw-bold text-black"> 235 </span> ratings</p>
+                  <h3 class="fw-bold text-info pb-4">$56.99</h3>
+                  <p class="card-text">Category: <span class="badge bg-warning text-dark">women's clothing</span></p>
+                </div>
+                <div class="card-footer p-0">
+                  <div class="row m-0 p-0">
+                    <div class="col-6 p-0">
+                      <button onclick="addToCart(15,56.99)" id="addToCart-btn" class="buy-now btn btn-warning w-100 rounded-0 border-0">Add to cart</button>
+                    </div>
+                    <div class="col-6 p-0">
+                      <button id="details-btn" class="btn btn-info text-white w-100 rounded-0 border-0">Details</button>
+                    </div>  
+                  </div>
+              </div></div></div><div class="col" style="max-width: 26rem;"><div class="card h-100 border-0 rounded-3 card-shadow">
+                <img src="https://fakestoreapi.com/img/81XH0e8fefL._AC_UY879_.jpg" class="card-img-top product-image mx-auto p-4" alt="...">
+                <div class="card-body card-bg">
+                  <div style="min-height: 100px;">
+                    <h5 class="card-title">Lock and Love Women's Removable Hooded Faux Leather Moto Biker Jacket</h5>
+                  </div>
+                  <div class="stars-outer">
+                    <div class="stars-inner" style="width: 57.99999999999999%"></div>
+                  </div>
+                  <p class="d-inline-block fw-bold ps-3 pt-2 mb-0 text-secondary"><span class="fs-3 text-dark">2.9 </span>/ 5 <span class="fw-normal">average rating</span></p>
+                  <p class="text-secondary">From <span class="fs-5 fw-bold text-black"> 340 </span> ratings</p>
+                  <h3 class="fw-bold text-info pb-4">$29.95</h3>
+                  <p class="card-text">Category: <span class="badge bg-warning text-dark">women's clothing</span></p>
+                </div>
+                <div class="card-footer p-0">
+                  <div class="row m-0 p-0">
+                    <div class="col-6 p-0">
+                      <button onclick="addToCart(16,29.95)" id="addToCart-btn" class="buy-now btn btn-warning w-100 rounded-0 border-0">Add to cart</button>
+                    </div>
+                    <div class="col-6 p-0">
+                      <button id="details-btn" class="btn btn-info text-white w-100 rounded-0 border-0">Details</button>
+                    </div>  
+                  </div>
+              </div></div></div><div class="col" style="max-width: 26rem;"><div class="card h-100 border-0 rounded-3 card-shadow">
+                <img src="https://fakestoreapi.com/img/71HblAHs5xL._AC_UY879_-2.jpg" class="card-img-top product-image mx-auto p-4" alt="...">
+                <div class="card-body card-bg">
+                  <div style="min-height: 100px;">
+                    <h5 class="card-title">Rain Jacket Women Windbreaker Striped Climbing Raincoats</h5>
+                  </div>
+                  <div class="stars-outer">
+                    <div class="stars-inner" style="width: 76%"></div>
+                  </div>
+                  <p class="d-inline-block fw-bold ps-3 pt-2 mb-0 text-secondary"><span class="fs-3 text-dark">3.8 </span>/ 5 <span class="fw-normal">average rating</span></p>
+                  <p class="text-secondary">From <span class="fs-5 fw-bold text-black"> 679 </span> ratings</p>
+                  <h3 class="fw-bold text-info pb-4">$39.99</h3>
+                  <p class="card-text">Category: <span class="badge bg-warning text-dark">women's clothing</span></p>
+                </div>
+                <div class="card-footer p-0">
+                  <div class="row m-0 p-0">
+                    <div class="col-6 p-0">
+                      <button onclick="addToCart(17,39.99)" id="addToCart-btn" class="buy-now btn btn-warning w-100 rounded-0 border-0">Add to cart</button>
+                    </div>
+                    <div class="col-6 p-0">
+                      <button id="details-btn" class="btn btn-info text-white w-100 rounded-0 border-0">Details</button>
+                    </div>  
+                  </div>
+              </div></div></div><div class="col" style="max-width: 26rem;"><div class="card h-100 border-0 rounded-3 card-shadow">
+                <img src="https://fakestoreapi.com/img/71z3kpMAYsL._AC_UY879_.jpg" class="card-img-top product-image mx-auto p-4" alt="...">
+                <div class="card-body card-bg">
+                  <div style="min-height: 100px;">
+                    <h5 class="card-title">MBJ Women's Solid Short Sleeve Boat Neck V </h5>
+                  </div>
+                  <div class="stars-outer">
+                    <div class="stars-inner" style="width: 94%"></div>
+                  </div>
+                  <p class="d-inline-block fw-bold ps-3 pt-2 mb-0 text-secondary"><span class="fs-3 text-dark">4.7 </span>/ 5 <span class="fw-normal">average rating</span></p>
+                  <p class="text-secondary">From <span class="fs-5 fw-bold text-black"> 130 </span> ratings</p>
+                  <h3 class="fw-bold text-info pb-4">$9.85</h3>
+                  <p class="card-text">Category: <span class="badge bg-warning text-dark">women's clothing</span></p>
+                </div>
+                <div class="card-footer p-0">
+                  <div class="row m-0 p-0">
+                    <div class="col-6 p-0">
+                      <button onclick="addToCart(18,9.85)" id="addToCart-btn" class="buy-now btn btn-warning w-100 rounded-0 border-0">Add to cart</button>
+                    </div>
+                    <div class="col-6 p-0">
+                      <button id="details-btn" class="btn btn-info text-white w-100 rounded-0 border-0">Details</button>
+                    </div>  
+                  </div>
+              </div></div></div><div class="col" style="max-width: 26rem;"><div class="card h-100 border-0 rounded-3 card-shadow">
+                <img src="https://fakestoreapi.com/img/51eg55uWmdL._AC_UX679_.jpg" class="card-img-top product-image mx-auto p-4" alt="...">
+                <div class="card-body card-bg">
+                  <div style="min-height: 100px;">
+                    <h5 class="card-title">Opna Women's Short Sleeve Moisture</h5>
+                  </div>
+                  <div class="stars-outer">
+                    <div class="stars-inner" style="width: 90%"></div>
+                  </div>
+                  <p class="d-inline-block fw-bold ps-3 pt-2 mb-0 text-secondary"><span class="fs-3 text-dark">4.5 </span>/ 5 <span class="fw-normal">average rating</span></p>
+                  <p class="text-secondary">From <span class="fs-5 fw-bold text-black"> 146 </span> ratings</p>
+                  <h3 class="fw-bold text-info pb-4">$7.95</h3>
+                  <p class="card-text">Category: <span class="badge bg-warning text-dark">women's clothing</span></p>
+                </div>
+                <div class="card-footer p-0">
+                  <div class="row m-0 p-0">
+                    <div class="col-6 p-0">
+                      <button onclick="addToCart(19,7.95)" id="addToCart-btn" class="buy-now btn btn-warning w-100 rounded-0 border-0">Add to cart</button>
+                    </div>
+                    <div class="col-6 p-0">
+                      <button id="details-btn" class="btn btn-info text-white w-100 rounded-0 border-0">Details</button>
+                    </div>  
+                  </div>
+              </div></div></div><div class="col" style="max-width: 26rem;"><div class="card h-100 border-0 rounded-3 card-shadow">
+                <img src="https://fakestoreapi.com/img/61pHAEJ4NML._AC_UX679_.jpg" class="card-img-top product-image mx-auto p-4" alt="...">
+                <div class="card-body card-bg">
+                  <div style="min-height: 100px;">
+                    <h5 class="card-title">DANVOUY Womens T Shirt Casual Cotton Short</h5>
+                  </div>
+                  <div class="stars-outer">
+                    <div class="stars-inner" style="width: 72%"></div>
+                  </div>
+                  <p class="d-inline-block fw-bold ps-3 pt-2 mb-0 text-secondary"><span class="fs-3 text-dark">3.6 </span>/ 5 <span class="fw-normal">average rating</span></p>
+                  <p class="text-secondary">From <span class="fs-5 fw-bold text-black"> 145 </span> ratings</p>
+                  <h3 class="fw-bold text-info pb-4">$12.99</h3>
+                  <p class="card-text">Category: <span class="badge bg-warning text-dark">women's clothing</span></p>
+                </div>
+                <div class="card-footer p-0">
+                  <div class="row m-0 p-0">
+                    <div class="col-6 p-0">
+                      <button onclick="addToCart(20,12.99)" id="addToCart-btn" class="buy-now btn btn-warning w-100 rounded-0 border-0">Add to cart</button>
+                    </div>
+                    <div class="col-6 p-0">
+                      <button id="details-btn" class="btn btn-info text-white w-100 rounded-0 border-0">Details</button>
+                    </div>  
+                  </div>
+              </div></div></div><div class="col" style="max-width: 26rem;"><div class="card h-100 border-0 rounded-3 card-shadow">
+                <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg" class="card-img-top product-image mx-auto p-4" alt="...">
+                <div class="card-body card-bg">
+                  <div style="min-height: 100px;">
+                    <h5 class="card-title">Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops</h5>
+                  </div>
+                  <div class="stars-outer">
+                    <div class="stars-inner" style="width: 78%"></div>
+                  </div>
+                  <p class="d-inline-block fw-bold ps-3 pt-2 mb-0 text-secondary"><span class="fs-3 text-dark">3.9 </span>/ 5 <span class="fw-normal">average rating</span></p>
+                  <p class="text-secondary">From <span class="fs-5 fw-bold text-black"> 120 </span> ratings</p>
+                  <h3 class="fw-bold text-info pb-4">$109.95</h3>
+                  <p class="card-text">Category: <span class="badge bg-warning text-dark">men's clothing</span></p>
+                </div>
+                <div class="card-footer p-0">
+                  <div class="row m-0 p-0">
+                    <div class="col-6 p-0">
+                      <button onclick="addToCart(1,109.95)" id="addToCart-btn" class="buy-now btn btn-warning w-100 rounded-0 border-0">Add to cart</button>
+                    </div>
+                    <div class="col-6 p-0">
+                      <button id="details-btn" class="btn btn-info text-white w-100 rounded-0 border-0">Details</button>
+                    </div>  
+                  </div>
+              </div></div></div><div class="col" style="max-width: 26rem;"><div class="card h-100 border-0 rounded-3 card-shadow">
+                <img src="https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg" class="card-img-top product-image mx-auto p-4" alt="...">
+                <div class="card-body card-bg">
+                  <div style="min-height: 100px;">
+                    <h5 class="card-title">Mens Casual Premium Slim Fit T-Shirts </h5>
+                  </div>
+                  <div class="stars-outer">
+                    <div class="stars-inner" style="width: 82%"></div>
+                  </div>
+                  <p class="d-inline-block fw-bold ps-3 pt-2 mb-0 text-secondary"><span class="fs-3 text-dark">4.1 </span>/ 5 <span class="fw-normal">average rating</span></p>
+                  <p class="text-secondary">From <span class="fs-5 fw-bold text-black"> 259 </span> ratings</p>
+                  <h3 class="fw-bold text-info pb-4">$22.3</h3>
+                  <p class="card-text">Category: <span class="badge bg-warning text-dark">men's clothing</span></p>
+                </div>
+                <div class="card-footer p-0">
+                  <div class="row m-0 p-0">
+                    <div class="col-6 p-0">
+                      <button onclick="addToCart(2,22.3)" id="addToCart-btn" class="buy-now btn btn-warning w-100 rounded-0 border-0">Add to cart</button>
+                    </div>
+                    <div class="col-6 p-0">
+                      <button id="details-btn" class="btn btn-info text-white w-100 rounded-0 border-0">Details</button>
+                    </div>  
+                  </div>
+              </div></div></div><div class="col" style="max-width: 26rem;"><div class="card h-100 border-0 rounded-3 card-shadow">
+                <img src="https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg" class="card-img-top product-image mx-auto p-4" alt="...">
+                <div class="card-body card-bg">
+                  <div style="min-height: 100px;">
+                    <h5 class="card-title">Mens Cotton Jacket</h5>
+                  </div>
+                  <div class="stars-outer">
+                    <div class="stars-inner" style="width: 94%"></div>
+                  </div>
+                  <p class="d-inline-block fw-bold ps-3 pt-2 mb-0 text-secondary"><span class="fs-3 text-dark">4.7 </span>/ 5 <span class="fw-normal">average rating</span></p>
+                  <p class="text-secondary">From <span class="fs-5 fw-bold text-black"> 500 </span> ratings</p>
+                  <h3 class="fw-bold text-info pb-4">$55.99</h3>
+                  <p class="card-text">Category: <span class="badge bg-warning text-dark">men's clothing</span></p>
+                </div>
+                <div class="card-footer p-0">
+                  <div class="row m-0 p-0">
+                    <div class="col-6 p-0">
+                      <button onclick="addToCart(3,55.99)" id="addToCart-btn" class="buy-now btn btn-warning w-100 rounded-0 border-0">Add to cart</button>
+                    </div>
+                    <div class="col-6 p-0">
+                      <button id="details-btn" class="btn btn-info text-white w-100 rounded-0 border-0">Details</button>
+                    </div>  
+                  </div>
+              </div></div></div><div class="col" style="max-width: 26rem;"><div class="card h-100 border-0 rounded-3 card-shadow">
+                <img src="https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg" class="card-img-top product-image mx-auto p-4" alt="...">
+                <div class="card-body card-bg">
+                  <div style="min-height: 100px;">
+                    <h5 class="card-title">Mens Casual Slim Fit</h5>
+                  </div>
+                  <div class="stars-outer">
+                    <div class="stars-inner" style="width: 42.00000000000001%"></div>
+                  </div>
+                  <p class="d-inline-block fw-bold ps-3 pt-2 mb-0 text-secondary"><span class="fs-3 text-dark">2.1 </span>/ 5 <span class="fw-normal">average rating</span></p>
+                  <p class="text-secondary">From <span class="fs-5 fw-bold text-black"> 430 </span> ratings</p>
+                  <h3 class="fw-bold text-info pb-4">$15.99</h3>
+                  <p class="card-text">Category: <span class="badge bg-warning text-dark">men's clothing</span></p>
+                </div>
+                <div class="card-footer p-0">
+                  <div class="row m-0 p-0">
+                    <div class="col-6 p-0">
+                      <button onclick="addToCart(4,15.99)" id="addToCart-btn" class="buy-now btn btn-warning w-100 rounded-0 border-0">Add to cart</button>
+                    </div>
+                    <div class="col-6 p-0">
+                      <button id="details-btn" class="btn btn-info text-white w-100 rounded-0 border-0">Details</button>
+                    </div>  
+                  </div>
+              </div></div></div><div class="col" style="max-width: 26rem;"><div class="card h-100 border-0 rounded-3 card-shadow">
+                <img src="https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg" class="card-img-top product-image mx-auto p-4" alt="...">
+                <div class="card-body card-bg">
+                  <div style="min-height: 100px;">
+                    <h5 class="card-title">John Hardy Women's Legends Naga Gold &amp; Silver Dragon Station Chain Bracelet</h5>
+                  </div>
+                  <div class="stars-outer">
+                    <div class="stars-inner" style="width: 92%"></div>
+                  </div>
+                  <p class="d-inline-block fw-bold ps-3 pt-2 mb-0 text-secondary"><span class="fs-3 text-dark">4.6 </span>/ 5 <span class="fw-normal">average rating</span></p>
+                  <p class="text-secondary">From <span class="fs-5 fw-bold text-black"> 400 </span> ratings</p>
+                  <h3 class="fw-bold text-info pb-4">$695</h3>
+                  <p class="card-text">Category: <span class="badge bg-warning text-dark">jewelery</span></p>
+                </div>
+                <div class="card-footer p-0">
+                  <div class="row m-0 p-0">
+                    <div class="col-6 p-0">
+                      <button onclick="addToCart(5,695)" id="addToCart-btn" class="buy-now btn btn-warning w-100 rounded-0 border-0">Add to cart</button>
+                    </div>
+                    <div class="col-6 p-0">
+                      <button id="details-btn" class="btn btn-info text-white w-100 rounded-0 border-0">Details</button>
+                    </div>  
+                  </div>
+              </div></div></div><div class="col" style="max-width: 26rem;"><div class="card h-100 border-0 rounded-3 card-shadow">
+                <img src="https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_QL65_ML3_.jpg" class="card-img-top product-image mx-auto p-4" alt="...">
+                <div class="card-body card-bg">
+                  <div style="min-height: 100px;">
+                    <h5 class="card-title">Solid Gold Petite Micropave </h5>
+                  </div>
+                  <div class="stars-outer">
+                    <div class="stars-inner" style="width: 78%"></div>
+                  </div>
+                  <p class="d-inline-block fw-bold ps-3 pt-2 mb-0 text-secondary"><span class="fs-3 text-dark">3.9 </span>/ 5 <span class="fw-normal">average rating</span></p>
+                  <p class="text-secondary">From <span class="fs-5 fw-bold text-black"> 70 </span> ratings</p>
+                  <h3 class="fw-bold text-info pb-4">$168</h3>
+                  <p class="card-text">Category: <span class="badge bg-warning text-dark">jewelery</span></p>
+                </div>
+                <div class="card-footer p-0">
+                  <div class="row m-0 p-0">
+                    <div class="col-6 p-0">
+                      <button onclick="addToCart(6,168)" id="addToCart-btn" class="buy-now btn btn-warning w-100 rounded-0 border-0">Add to cart</button>
+                    </div>
+                    <div class="col-6 p-0">
+                      <button id="details-btn" class="btn btn-info text-white w-100 rounded-0 border-0">Details</button>
+                    </div>  
+                  </div>
+              </div></div></div><div class="col" style="max-width: 26rem;"><div class="card h-100 border-0 rounded-3 card-shadow">
+                <img src="https://fakestoreapi.com/img/71YAIFU48IL._AC_UL640_QL65_ML3_.jpg" class="card-img-top product-image mx-auto p-4" alt="...">
+                <div class="card-body card-bg">
+                  <div style="min-height: 100px;">
+                    <h5 class="card-title">White Gold Plated Princess</h5>
+                  </div>
+                  <div class="stars-outer">
+                    <div class="stars-inner" style="width: 60%"></div>
+                  </div>
+                  <p class="d-inline-block fw-bold ps-3 pt-2 mb-0 text-secondary"><span class="fs-3 text-dark">3 </span>/ 5 <span class="fw-normal">average rating</span></p>
+                  <p class="text-secondary">From <span class="fs-5 fw-bold text-black"> 400 </span> ratings</p>
+                  <h3 class="fw-bold text-info pb-4">$9.99</h3>
+                  <p class="card-text">Category: <span class="badge bg-warning text-dark">jewelery</span></p>
+                </div>
+                <div class="card-footer p-0">
+                  <div class="row m-0 p-0">
+                    <div class="col-6 p-0">
+                      <button onclick="addToCart(7,9.99)" id="addToCart-btn" class="buy-now btn btn-warning w-100 rounded-0 border-0">Add to cart</button>
+                    </div>
+                    <div class="col-6 p-0">
+                      <button id="details-btn" class="btn btn-info text-white w-100 rounded-0 border-0">Details</button>
+                    </div>  
+                  </div>
+              </div></div></div><div class="col" style="max-width: 26rem;"><div class="card h-100 border-0 rounded-3 card-shadow">
+                <img src="https://fakestoreapi.com/img/51UDEzMJVpL._AC_UL640_QL65_ML3_.jpg" class="card-img-top product-image mx-auto p-4" alt="...">
+                <div class="card-body card-bg">
+                  <div style="min-height: 100px;">
+                    <h5 class="card-title">Pierced Owl Rose Gold Plated Stainless Steel Double</h5>
+                  </div>
+                  <div class="stars-outer">
+                    <div class="stars-inner" style="width: 38%"></div>
+                  </div>
+                  <p class="d-inline-block fw-bold ps-3 pt-2 mb-0 text-secondary"><span class="fs-3 text-dark">1.9 </span>/ 5 <span class="fw-normal">average rating</span></p>
+                  <p class="text-secondary">From <span class="fs-5 fw-bold text-black"> 100 </span> ratings</p>
+                  <h3 class="fw-bold text-info pb-4">$10.99</h3>
+                  <p class="card-text">Category: <span class="badge bg-warning text-dark">jewelery</span></p>
+                </div>
+                <div class="card-footer p-0">
+                  <div class="row m-0 p-0">
+                    <div class="col-6 p-0">
+                      <button onclick="addToCart(8,10.99)" id="addToCart-btn" class="buy-now btn btn-warning w-100 rounded-0 border-0">Add to cart</button>
+                    </div>
+                    <div class="col-6 p-0">
+                      <button id="details-btn" class="btn btn-info text-white w-100 rounded-0 border-0">Details</button>
+                    </div>  
+                  </div>
+              </div></div></div><div class="col" style="max-width: 26rem;"><div class="card h-100 border-0 rounded-3 card-shadow">
+                <img src="https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg" class="card-img-top product-image mx-auto p-4" alt="...">
+                <div class="card-body card-bg">
+                  <div style="min-height: 100px;">
+                    <h5 class="card-title">WD 2TB Elements Portable External Hard Drive - USB 3.0 </h5>
+                  </div>
+                  <div class="stars-outer">
+                    <div class="stars-inner" style="width: 65.99999999999999%"></div>
+                  </div>
+                  <p class="d-inline-block fw-bold ps-3 pt-2 mb-0 text-secondary"><span class="fs-3 text-dark">3.3 </span>/ 5 <span class="fw-normal">average rating</span></p>
+                  <p class="text-secondary">From <span class="fs-5 fw-bold text-black"> 203 </span> ratings</p>
+                  <h3 class="fw-bold text-info pb-4">$64</h3>
+                  <p class="card-text">Category: <span class="badge bg-warning text-dark">electronics</span></p>
+                </div>
+                <div class="card-footer p-0">
+                  <div class="row m-0 p-0">
+                    <div class="col-6 p-0">
+                      <button onclick="addToCart(9,64)" id="addToCart-btn" class="buy-now btn btn-warning w-100 rounded-0 border-0">Add to cart</button>
+                    </div>
+                    <div class="col-6 p-0">
+                      <button id="details-btn" class="btn btn-info text-white w-100 rounded-0 border-0">Details</button>
+                    </div>  
+                  </div>
+              </div></div></div><div class="col" style="max-width: 26rem;"><div class="card h-100 border-0 rounded-3 card-shadow">
+                <img src="https://fakestoreapi.com/img/61U7T1koQqL._AC_SX679_.jpg" class="card-img-top product-image mx-auto p-4" alt="...">
+                <div class="card-body card-bg">
+                  <div style="min-height: 100px;">
+                    <h5 class="card-title">SanDisk SSD PLUS 1TB Internal SSD - SATA III 6 Gb/s</h5>
+                  </div>
+                  <div class="stars-outer">
+                    <div class="stars-inner" style="width: 57.99999999999999%"></div>
+                  </div>
+                  <p class="d-inline-block fw-bold ps-3 pt-2 mb-0 text-secondary"><span class="fs-3 text-dark">2.9 </span>/ 5 <span class="fw-normal">average rating</span></p>
+                  <p class="text-secondary">From <span class="fs-5 fw-bold text-black"> 470 </span> ratings</p>
+                  <h3 class="fw-bold text-info pb-4">$109</h3>
+                  <p class="card-text">Category: <span class="badge bg-warning text-dark">electronics</span></p>
+                </div>
+                <div class="card-footer p-0">
+                  <div class="row m-0 p-0">
+                    <div class="col-6 p-0">
+                      <button onclick="addToCart(10,109)" id="addToCart-btn" class="buy-now btn btn-warning w-100 rounded-0 border-0">Add to cart</button>
+                    </div>
+                    <div class="col-6 p-0">
+                      <button id="details-btn" class="btn btn-info text-white w-100 rounded-0 border-0">Details</button>
+                    </div>  
+                  </div>
+              </div></div></div><div class="col" style="max-width: 26rem;"><div class="card h-100 border-0 rounded-3 card-shadow">
+                <img src="https://fakestoreapi.com/img/71kWymZ+c+L._AC_SX679_.jpg" class="card-img-top product-image mx-auto p-4" alt="...">
+                <div class="card-body card-bg">
+                  <div style="min-height: 100px;">
+                    <h5 class="card-title">Silicon Power 256GB SSD 3D NAND A55 SLC Cache Performance Boost SATA III 2.5</h5>
+                  </div>
+                  <div class="stars-outer">
+                    <div class="stars-inner" style="width: 96%"></div>
+                  </div>
+                  <p class="d-inline-block fw-bold ps-3 pt-2 mb-0 text-secondary"><span class="fs-3 text-dark">4.8 </span>/ 5 <span class="fw-normal">average rating</span></p>
+                  <p class="text-secondary">From <span class="fs-5 fw-bold text-black"> 319 </span> ratings</p>
+                  <h3 class="fw-bold text-info pb-4">$109</h3>
+                  <p class="card-text">Category: <span class="badge bg-warning text-dark">electronics</span></p>
+                </div>
+                <div class="card-footer p-0">
+                  <div class="row m-0 p-0">
+                    <div class="col-6 p-0">
+                      <button onclick="addToCart(11,109)" id="addToCart-btn" class="buy-now btn btn-warning w-100 rounded-0 border-0">Add to cart</button>
+                    </div>
+                    <div class="col-6 p-0">
+                      <button id="details-btn" class="btn btn-info text-white w-100 rounded-0 border-0">Details</button>
+                    </div>  
+                  </div>
+              </div></div></div><div class="col" style="max-width: 26rem;"><div class="card h-100 border-0 rounded-3 card-shadow">
+                <img src="https://fakestoreapi.com/img/61mtL65D4cL._AC_SX679_.jpg" class="card-img-top product-image mx-auto p-4" alt="...">
+                <div class="card-body card-bg">
+                  <div style="min-height: 100px;">
+                    <h5 class="card-title">WD 4TB Gaming Drive Works with Playstation 4 Portable External Hard Drive</h5>
+                  </div>
+                  <div class="stars-outer">
+                    <div class="stars-inner" style="width: 96%"></div>
+                  </div>
+                  <p class="d-inline-block fw-bold ps-3 pt-2 mb-0 text-secondary"><span class="fs-3 text-dark">4.8 </span>/ 5 <span class="fw-normal">average rating</span></p>
+                  <p class="text-secondary">From <span class="fs-5 fw-bold text-black"> 400 </span> ratings</p>
+                  <h3 class="fw-bold text-info pb-4">$114</h3>
+                  <p class="card-text">Category: <span class="badge bg-warning text-dark">electronics</span></p>
+                </div>
+                <div class="card-footer p-0">
+                  <div class="row m-0 p-0">
+                    <div class="col-6 p-0">
+                      <button onclick="addToCart(12,114)" id="addToCart-btn" class="buy-now btn btn-warning w-100 rounded-0 border-0">Add to cart</button>
+                    </div>
+                    <div class="col-6 p-0">
+                      <button id="details-btn" class="btn btn-info text-white w-100 rounded-0 border-0">Details</button>
+                    </div>  
+                  </div>
+              </div></div></div><div class="col" style="max-width: 26rem;"><div class="card h-100 border-0 rounded-3 card-shadow">
+                <img src="https://fakestoreapi.com/img/81QpkIctqPL._AC_SX679_.jpg" class="card-img-top product-image mx-auto p-4" alt="...">
+                <div class="card-body card-bg">
+                  <div style="min-height: 100px;">
+                    <h5 class="card-title">Acer SB220Q bi 21.5 inches Full HD (1920 x 1080) IPS Ultra-Thin</h5>
+                  </div>
+                  <div class="stars-outer">
+                    <div class="stars-inner" style="width: 57.99999999999999%"></div>
+                  </div>
+                  <p class="d-inline-block fw-bold ps-3 pt-2 mb-0 text-secondary"><span class="fs-3 text-dark">2.9 </span>/ 5 <span class="fw-normal">average rating</span></p>
+                  <p class="text-secondary">From <span class="fs-5 fw-bold text-black"> 250 </span> ratings</p>
+                  <h3 class="fw-bold text-info pb-4">$599</h3>
+                  <p class="card-text">Category: <span class="badge bg-warning text-dark">electronics</span></p>
+                </div>
+                <div class="card-footer p-0">
+                  <div class="row m-0 p-0">
+                    <div class="col-6 p-0">
+                      <button onclick="addToCart(13,599)" id="addToCart-btn" class="buy-now btn btn-warning w-100 rounded-0 border-0">Add to cart</button>
+                    </div>
+                    <div class="col-6 p-0">
+                      <button id="details-btn" class="btn btn-info text-white w-100 rounded-0 border-0">Details</button>
+                    </div>  
+                  </div>
+              </div></div></div><div class="col" style="max-width: 26rem;"><div class="card h-100 border-0 rounded-3 card-shadow">
+                <img src="https://fakestoreapi.com/img/81Zt42ioCgL._AC_SX679_.jpg" class="card-img-top product-image mx-auto p-4" alt="...">
+                <div class="card-body card-bg">
+                  <div style="min-height: 100px;">
+                    <h5 class="card-title">Samsung 49-Inch CHG90 144Hz Curved Gaming Monitor (LC49HG90DMNXZA) – Super Ultrawide Screen QLED </h5>
+                  </div>
+                  <div class="stars-outer">
+                    <div class="stars-inner" style="width: 44.00000000000001%"></div>
+                  </div>
+                  <p class="d-inline-block fw-bold ps-3 pt-2 mb-0 text-secondary"><span class="fs-3 text-dark">2.2 </span>/ 5 <span class="fw-normal">average rating</span></p>
+                  <p class="text-secondary">From <span class="fs-5 fw-bold text-black"> 140 </span> ratings</p>
+                  <h3 class="fw-bold text-info pb-4">$999.99</h3>
+                  <p class="card-text">Category: <span class="badge bg-warning text-dark">electronics</span></p>
+                </div>
+                <div class="card-footer p-0">
+                  <div class="row m-0 p-0">
+                    <div class="col-6 p-0">
+                      <button onclick="addToCart(14,999.99)" id="addToCart-btn" class="buy-now btn btn-warning w-100 rounded-0 border-0">Add to cart</button>
+                    </div>
+                    <div class="col-6 p-0">
+                      <button id="details-btn" class="btn btn-info text-white w-100 rounded-0 border-0">Details</button>
+                    </div>  
+                  </div>
+              </div></div></div><div class="col" style="max-width: 26rem;"><div class="card h-100 border-0 rounded-3 card-shadow">
+                <img src="https://fakestoreapi.com/img/51Y5NI-I5jL._AC_UX679_.jpg" class="card-img-top product-image mx-auto p-4" alt="...">
+                <div class="card-body card-bg">
+                  <div style="min-height: 100px;">
+                    <h5 class="card-title">BIYLACLESEN Women's 3-in-1 Snowboard Jacket Winter Coats</h5>
+                  </div>
+                  <div class="stars-outer">
+                    <div class="stars-inner" style="width: 52%"></div>
+                  </div>
+                  <p class="d-inline-block fw-bold ps-3 pt-2 mb-0 text-secondary"><span class="fs-3 text-dark">2.6 </span>/ 5 <span class="fw-normal">average rating</span></p>
+                  <p class="text-secondary">From <span class="fs-5 fw-bold text-black"> 235 </span> ratings</p>
+                  <h3 class="fw-bold text-info pb-4">$56.99</h3>
+                  <p class="card-text">Category: <span class="badge bg-warning text-dark">women's clothing</span></p>
+                </div>
+                <div class="card-footer p-0">
+                  <div class="row m-0 p-0">
+                    <div class="col-6 p-0">
+                      <button onclick="addToCart(15,56.99)" id="addToCart-btn" class="buy-now btn btn-warning w-100 rounded-0 border-0">Add to cart</button>
+                    </div>
+                    <div class="col-6 p-0">
+                      <button id="details-btn" class="btn btn-info text-white w-100 rounded-0 border-0">Details</button>
+                    </div>  
+                  </div>
+              </div></div></div><div class="col" style="max-width: 26rem;"><div class="card h-100 border-0 rounded-3 card-shadow">
+                <img src="https://fakestoreapi.com/img/81XH0e8fefL._AC_UY879_.jpg" class="card-img-top product-image mx-auto p-4" alt="...">
+                <div class="card-body card-bg">
+                  <div style="min-height: 100px;">
+                    <h5 class="card-title">Lock and Love Women's Removable Hooded Faux Leather Moto Biker Jacket</h5>
+                  </div>
+                  <div class="stars-outer">
+                    <div class="stars-inner" style="width: 57.99999999999999%"></div>
+                  </div>
+                  <p class="d-inline-block fw-bold ps-3 pt-2 mb-0 text-secondary"><span class="fs-3 text-dark">2.9 </span>/ 5 <span class="fw-normal">average rating</span></p>
+                  <p class="text-secondary">From <span class="fs-5 fw-bold text-black"> 340 </span> ratings</p>
+                  <h3 class="fw-bold text-info pb-4">$29.95</h3>
+                  <p class="card-text">Category: <span class="badge bg-warning text-dark">women's clothing</span></p>
+                </div>
+                <div class="card-footer p-0">
+                  <div class="row m-0 p-0">
+                    <div class="col-6 p-0">
+                      <button onclick="addToCart(16,29.95)" id="addToCart-btn" class="buy-now btn btn-warning w-100 rounded-0 border-0">Add to cart</button>
+                    </div>
+                    <div class="col-6 p-0">
+                      <button id="details-btn" class="btn btn-info text-white w-100 rounded-0 border-0">Details</button>
+                    </div>  
+                  </div>
+              </div></div></div><div class="col" style="max-width: 26rem;"><div class="card h-100 border-0 rounded-3 card-shadow">
+                <img src="https://fakestoreapi.com/img/71HblAHs5xL._AC_UY879_-2.jpg" class="card-img-top product-image mx-auto p-4" alt="...">
+                <div class="card-body card-bg">
+                  <div style="min-height: 100px;">
+                    <h5 class="card-title">Rain Jacket Women Windbreaker Striped Climbing Raincoats</h5>
+                  </div>
+                  <div class="stars-outer">
+                    <div class="stars-inner" style="width: 76%"></div>
+                  </div>
+                  <p class="d-inline-block fw-bold ps-3 pt-2 mb-0 text-secondary"><span class="fs-3 text-dark">3.8 </span>/ 5 <span class="fw-normal">average rating</span></p>
+                  <p class="text-secondary">From <span class="fs-5 fw-bold text-black"> 679 </span> ratings</p>
+                  <h3 class="fw-bold text-info pb-4">$39.99</h3>
+                  <p class="card-text">Category: <span class="badge bg-warning text-dark">women's clothing</span></p>
+                </div>
+                <div class="card-footer p-0">
+                  <div class="row m-0 p-0">
+                    <div class="col-6 p-0">
+                      <button onclick="addToCart(17,39.99)" id="addToCart-btn" class="buy-now btn btn-warning w-100 rounded-0 border-0">Add to cart</button>
+                    </div>
+                    <div class="col-6 p-0">
+                      <button id="details-btn" class="btn btn-info text-white w-100 rounded-0 border-0">Details</button>
+                    </div>  
+                  </div>
+              </div></div></div><div class="col" style="max-width: 26rem;"><div class="card h-100 border-0 rounded-3 card-shadow">
+                <img src="https://fakestoreapi.com/img/71z3kpMAYsL._AC_UY879_.jpg" class="card-img-top product-image mx-auto p-4" alt="...">
+                <div class="card-body card-bg">
+                  <div style="min-height: 100px;">
+                    <h5 class="card-title">MBJ Women's Solid Short Sleeve Boat Neck V </h5>
+                  </div>
+                  <div class="stars-outer">
+                    <div class="stars-inner" style="width: 94%"></div>
+                  </div>
+                  <p class="d-inline-block fw-bold ps-3 pt-2 mb-0 text-secondary"><span class="fs-3 text-dark">4.7 </span>/ 5 <span class="fw-normal">average rating</span></p>
+                  <p class="text-secondary">From <span class="fs-5 fw-bold text-black"> 130 </span> ratings</p>
+                  <h3 class="fw-bold text-info pb-4">$9.85</h3>
+                  <p class="card-text">Category: <span class="badge bg-warning text-dark">women's clothing</span></p>
+                </div>
+                <div class="card-footer p-0">
+                  <div class="row m-0 p-0">
+                    <div class="col-6 p-0">
+                      <button onclick="addToCart(18,9.85)" id="addToCart-btn" class="buy-now btn btn-warning w-100 rounded-0 border-0">Add to cart</button>
+                    </div>
+                    <div class="col-6 p-0">
+                      <button id="details-btn" class="btn btn-info text-white w-100 rounded-0 border-0">Details</button>
+                    </div>  
+                  </div>
+              </div></div></div><div class="col" style="max-width: 26rem;"><div class="card h-100 border-0 rounded-3 card-shadow">
+                <img src="https://fakestoreapi.com/img/51eg55uWmdL._AC_UX679_.jpg" class="card-img-top product-image mx-auto p-4" alt="...">
+                <div class="card-body card-bg">
+                  <div style="min-height: 100px;">
+                    <h5 class="card-title">Opna Women's Short Sleeve Moisture</h5>
+                  </div>
+                  <div class="stars-outer">
+                    <div class="stars-inner" style="width: 90%"></div>
+                  </div>
+                  <p class="d-inline-block fw-bold ps-3 pt-2 mb-0 text-secondary"><span class="fs-3 text-dark">4.5 </span>/ 5 <span class="fw-normal">average rating</span></p>
+                  <p class="text-secondary">From <span class="fs-5 fw-bold text-black"> 146 </span> ratings</p>
+                  <h3 class="fw-bold text-info pb-4">$7.95</h3>
+                  <p class="card-text">Category: <span class="badge bg-warning text-dark">women's clothing</span></p>
+                </div>
+                <div class="card-footer p-0">
+                  <div class="row m-0 p-0">
+                    <div class="col-6 p-0">
+                      <button onclick="addToCart(19,7.95)" id="addToCart-btn" class="buy-now btn btn-warning w-100 rounded-0 border-0">Add to cart</button>
+                    </div>
+                    <div class="col-6 p-0">
+                      <button id="details-btn" class="btn btn-info text-white w-100 rounded-0 border-0">Details</button>
+                    </div>  
+                  </div>
+              </div></div></div><div class="col" style="max-width: 26rem;"><div class="card h-100 border-0 rounded-3 card-shadow">
+                <img src="https://fakestoreapi.com/img/61pHAEJ4NML._AC_UX679_.jpg" class="card-img-top product-image mx-auto p-4" alt="...">
+                <div class="card-body card-bg">
+                  <div style="min-height: 100px;">
+                    <h5 class="card-title">DANVOUY Womens T Shirt Casual Cotton Short</h5>
+                  </div>
+                  <div class="stars-outer">
+                    <div class="stars-inner" style="width: 72%"></div>
+                  </div>
+                  <p class="d-inline-block fw-bold ps-3 pt-2 mb-0 text-secondary"><span class="fs-3 text-dark">3.6 </span>/ 5 <span class="fw-normal">average rating</span></p>
+                  <p class="text-secondary">From <span class="fs-5 fw-bold text-black"> 145 </span> ratings</p>
+                  <h3 class="fw-bold text-info pb-4">$12.99</h3>
+                  <p class="card-text">Category: <span class="badge bg-warning text-dark">women's clothing</span></p>
+                </div>
+                <div class="card-footer p-0">
+                  <div class="row m-0 p-0">
+                    <div class="col-6 p-0">
+                      <button onclick="addToCart(20,12.99)" id="addToCart-btn" class="buy-now btn btn-warning w-100 rounded-0 border-0">Add to cart</button>
+                    </div>
+                    <div class="col-6 p-0">
+                      <button id="details-btn" class="btn btn-info text-white w-100 rounded-0 border-0">Details</button>
+                    </div>  
+                  </div>
+              </div></div></div><div class="col" style="max-width: 26rem;"><div class="card h-100 border-0 rounded-3 card-shadow">
+                <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg" class="card-img-top product-image mx-auto p-4" alt="...">
+                <div class="card-body card-bg">
+                  <div style="min-height: 100px;">
+                    <h5 class="card-title">Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops</h5>
+                  </div>
+                  <div class="stars-outer">
+                    <div class="stars-inner" style="width: 78%"></div>
+                  </div>
+                  <p class="d-inline-block fw-bold ps-3 pt-2 mb-0 text-secondary"><span class="fs-3 text-dark">3.9 </span>/ 5 <span class="fw-normal">average rating</span></p>
+                  <p class="text-secondary">From <span class="fs-5 fw-bold text-black"> 120 </span> ratings</p>
+                  <h3 class="fw-bold text-info pb-4">$109.95</h3>
+                  <p class="card-text">Category: <span class="badge bg-warning text-dark">men's clothing</span></p>
+                </div>
+                <div class="card-footer p-0">
+                  <div class="row m-0 p-0">
+                    <div class="col-6 p-0">
+                      <button onclick="addToCart(1,109.95)" id="addToCart-btn" class="buy-now btn btn-warning w-100 rounded-0 border-0">Add to cart</button>
+                    </div>
+                    <div class="col-6 p-0">
+                      <button id="details-btn" class="btn btn-info text-white w-100 rounded-0 border-0">Details</button>
+                    </div>  
+                  </div>
+              </div></div></div><div class="col" style="max-width: 26rem;"><div class="card h-100 border-0 rounded-3 card-shadow">
+                <img src="https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg" class="card-img-top product-image mx-auto p-4" alt="...">
+                <div class="card-body card-bg">
+                  <div style="min-height: 100px;">
+                    <h5 class="card-title">Mens Casual Premium Slim Fit T-Shirts </h5>
+                  </div>
+                  <div class="stars-outer">
+                    <div class="stars-inner" style="width: 82%"></div>
+                  </div>
+                  <p class="d-inline-block fw-bold ps-3 pt-2 mb-0 text-secondary"><span class="fs-3 text-dark">4.1 </span>/ 5 <span class="fw-normal">average rating</span></p>
+                  <p class="text-secondary">From <span class="fs-5 fw-bold text-black"> 259 </span> ratings</p>
+                  <h3 class="fw-bold text-info pb-4">$22.3</h3>
+                  <p class="card-text">Category: <span class="badge bg-warning text-dark">men's clothing</span></p>
+                </div>
+                <div class="card-footer p-0">
+                  <div class="row m-0 p-0">
+                    <div class="col-6 p-0">
+                      <button onclick="addToCart(2,22.3)" id="addToCart-btn" class="buy-now btn btn-warning w-100 rounded-0 border-0">Add to cart</button>
+                    </div>
+                    <div class="col-6 p-0">
+                      <button id="details-btn" class="btn btn-info text-white w-100 rounded-0 border-0">Details</button>
+                    </div>  
+                  </div>
+              </div></div></div><div class="col" style="max-width: 26rem;"><div class="card h-100 border-0 rounded-3 card-shadow">
+                <img src="https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg" class="card-img-top product-image mx-auto p-4" alt="...">
+                <div class="card-body card-bg">
+                  <div style="min-height: 100px;">
+                    <h5 class="card-title">Mens Cotton Jacket</h5>
+                  </div>
+                  <div class="stars-outer">
+                    <div class="stars-inner" style="width: 94%"></div>
+                  </div>
+                  <p class="d-inline-block fw-bold ps-3 pt-2 mb-0 text-secondary"><span class="fs-3 text-dark">4.7 </span>/ 5 <span class="fw-normal">average rating</span></p>
+                  <p class="text-secondary">From <span class="fs-5 fw-bold text-black"> 500 </span> ratings</p>
+                  <h3 class="fw-bold text-info pb-4">$55.99</h3>
+                  <p class="card-text">Category: <span class="badge bg-warning text-dark">men's clothing</span></p>
+                </div>
+                <div class="card-footer p-0">
+                  <div class="row m-0 p-0">
+                    <div class="col-6 p-0">
+                      <button onclick="addToCart(3,55.99)" id="addToCart-btn" class="buy-now btn btn-warning w-100 rounded-0 border-0">Add to cart</button>
+                    </div>
+                    <div class="col-6 p-0">
+                      <button id="details-btn" class="btn btn-info text-white w-100 rounded-0 border-0">Details</button>
+                    </div>  
+                  </div>
+              </div></div></div><div class="col" style="max-width: 26rem;"><div class="card h-100 border-0 rounded-3 card-shadow">
+                <img src="https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg" class="card-img-top product-image mx-auto p-4" alt="...">
+                <div class="card-body card-bg">
+                  <div style="min-height: 100px;">
+                    <h5 class="card-title">Mens Casual Slim Fit</h5>
+                  </div>
+                  <div class="stars-outer">
+                    <div class="stars-inner" style="width: 42.00000000000001%"></div>
+                  </div>
+                  <p class="d-inline-block fw-bold ps-3 pt-2 mb-0 text-secondary"><span class="fs-3 text-dark">2.1 </span>/ 5 <span class="fw-normal">average rating</span></p>
+                  <p class="text-secondary">From <span class="fs-5 fw-bold text-black"> 430 </span> ratings</p>
+                  <h3 class="fw-bold text-info pb-4">$15.99</h3>
+                  <p class="card-text">Category: <span class="badge bg-warning text-dark">men's clothing</span></p>
+                </div>
+                <div class="card-footer p-0">
+                  <div class="row m-0 p-0">
+                    <div class="col-6 p-0">
+                      <button onclick="addToCart(4,15.99)" id="addToCart-btn" class="buy-now btn btn-warning w-100 rounded-0 border-0">Add to cart</button>
+                    </div>
+                    <div class="col-6 p-0">
+                      <button id="details-btn" class="btn btn-info text-white w-100 rounded-0 border-0">Details</button>
+                    </div>  
+                  </div>
+              </div></div></div><div class="col" style="max-width: 26rem;"><div class="card h-100 border-0 rounded-3 card-shadow">
+                <img src="https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg" class="card-img-top product-image mx-auto p-4" alt="...">
+                <div class="card-body card-bg">
+                  <div style="min-height: 100px;">
+                    <h5 class="card-title">John Hardy Women's Legends Naga Gold &amp; Silver Dragon Station Chain Bracelet</h5>
+                  </div>
+                  <div class="stars-outer">
+                    <div class="stars-inner" style="width: 92%"></div>
+                  </div>
+                  <p class="d-inline-block fw-bold ps-3 pt-2 mb-0 text-secondary"><span class="fs-3 text-dark">4.6 </span>/ 5 <span class="fw-normal">average rating</span></p>
+                  <p class="text-secondary">From <span class="fs-5 fw-bold text-black"> 400 </span> ratings</p>
+                  <h3 class="fw-bold text-info pb-4">$695</h3>
+                  <p class="card-text">Category: <span class="badge bg-warning text-dark">jewelery</span></p>
+                </div>
+                <div class="card-footer p-0">
+                  <div class="row m-0 p-0">
+                    <div class="col-6 p-0">
+                      <button onclick="addToCart(5,695)" id="addToCart-btn" class="buy-now btn btn-warning w-100 rounded-0 border-0">Add to cart</button>
+                    </div>
+                    <div class="col-6 p-0">
+                      <button id="details-btn" class="btn btn-info text-white w-100 rounded-0 border-0">Details</button>
+                    </div>  
+                  </div>
+              </div></div></div><div class="col" style="max-width: 26rem;"><div class="card h-100 border-0 rounded-3 card-shadow">
+                <img src="https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_QL65_ML3_.jpg" class="card-img-top product-image mx-auto p-4" alt="...">
+                <div class="card-body card-bg">
+                  <div style="min-height: 100px;">
+                    <h5 class="card-title">Solid Gold Petite Micropave </h5>
+                  </div>
+                  <div class="stars-outer">
+                    <div class="stars-inner" style="width: 78%"></div>
+                  </div>
+                  <p class="d-inline-block fw-bold ps-3 pt-2 mb-0 text-secondary"><span class="fs-3 text-dark">3.9 </span>/ 5 <span class="fw-normal">average rating</span></p>
+                  <p class="text-secondary">From <span class="fs-5 fw-bold text-black"> 70 </span> ratings</p>
+                  <h3 class="fw-bold text-info pb-4">$168</h3>
+                  <p class="card-text">Category: <span class="badge bg-warning text-dark">jewelery</span></p>
+                </div>
+                <div class="card-footer p-0">
+                  <div class="row m-0 p-0">
+                    <div class="col-6 p-0">
+                      <button onclick="addToCart(6,168)" id="addToCart-btn" class="buy-now btn btn-warning w-100 rounded-0 border-0">Add to cart</button>
+                    </div>
+                    <div class="col-6 p-0">
+                      <button id="details-btn" class="btn btn-info text-white w-100 rounded-0 border-0">Details</button>
+                    </div>  
+                  </div>
+              </div></div></div><div class="col" style="max-width: 26rem;"><div class="card h-100 border-0 rounded-3 card-shadow">
+                <img src="https://fakestoreapi.com/img/71YAIFU48IL._AC_UL640_QL65_ML3_.jpg" class="card-img-top product-image mx-auto p-4" alt="...">
+                <div class="card-body card-bg">
+                  <div style="min-height: 100px;">
+                    <h5 class="card-title">White Gold Plated Princess</h5>
+                  </div>
+                  <div class="stars-outer">
+                    <div class="stars-inner" style="width: 60%"></div>
+                  </div>
+                  <p class="d-inline-block fw-bold ps-3 pt-2 mb-0 text-secondary"><span class="fs-3 text-dark">3 </span>/ 5 <span class="fw-normal">average rating</span></p>
+                  <p class="text-secondary">From <span class="fs-5 fw-bold text-black"> 400 </span> ratings</p>
+                  <h3 class="fw-bold text-info pb-4">$9.99</h3>
+                  <p class="card-text">Category: <span class="badge bg-warning text-dark">jewelery</span></p>
+                </div>
+                <div class="card-footer p-0">
+                  <div class="row m-0 p-0">
+                    <div class="col-6 p-0">
+                      <button onclick="addToCart(7,9.99)" id="addToCart-btn" class="buy-now btn btn-warning w-100 rounded-0 border-0">Add to cart</button>
+                    </div>
+                    <div class="col-6 p-0">
+                      <button id="details-btn" class="btn btn-info text-white w-100 rounded-0 border-0">Details</button>
+                    </div>  
+                  </div>
+              </div></div></div><div class="col" style="max-width: 26rem;"><div class="card h-100 border-0 rounded-3 card-shadow">
+                <img src="https://fakestoreapi.com/img/51UDEzMJVpL._AC_UL640_QL65_ML3_.jpg" class="card-img-top product-image mx-auto p-4" alt="...">
+                <div class="card-body card-bg">
+                  <div style="min-height: 100px;">
+                    <h5 class="card-title">Pierced Owl Rose Gold Plated Stainless Steel Double</h5>
+                  </div>
+                  <div class="stars-outer">
+                    <div class="stars-inner" style="width: 38%"></div>
+                  </div>
+                  <p class="d-inline-block fw-bold ps-3 pt-2 mb-0 text-secondary"><span class="fs-3 text-dark">1.9 </span>/ 5 <span class="fw-normal">average rating</span></p>
+                  <p class="text-secondary">From <span class="fs-5 fw-bold text-black"> 100 </span> ratings</p>
+                  <h3 class="fw-bold text-info pb-4">$10.99</h3>
+                  <p class="card-text">Category: <span class="badge bg-warning text-dark">jewelery</span></p>
+                </div>
+                <div class="card-footer p-0">
+                  <div class="row m-0 p-0">
+                    <div class="col-6 p-0">
+                      <button onclick="addToCart(8,10.99)" id="addToCart-btn" class="buy-now btn btn-warning w-100 rounded-0 border-0">Add to cart</button>
+                    </div>
+                    <div class="col-6 p-0">
+                      <button id="details-btn" class="btn btn-info text-white w-100 rounded-0 border-0">Details</button>
+                    </div>  
+                  </div>
+              </div></div></div><div class="col" style="max-width: 26rem;"><div class="card h-100 border-0 rounded-3 card-shadow">
+                <img src="https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg" class="card-img-top product-image mx-auto p-4" alt="...">
+                <div class="card-body card-bg">
+                  <div style="min-height: 100px;">
+                    <h5 class="card-title">WD 2TB Elements Portable External Hard Drive - USB 3.0 </h5>
+                  </div>
+                  <div class="stars-outer">
+                    <div class="stars-inner" style="width: 65.99999999999999%"></div>
+                  </div>
+                  <p class="d-inline-block fw-bold ps-3 pt-2 mb-0 text-secondary"><span class="fs-3 text-dark">3.3 </span>/ 5 <span class="fw-normal">average rating</span></p>
+                  <p class="text-secondary">From <span class="fs-5 fw-bold text-black"> 203 </span> ratings</p>
+                  <h3 class="fw-bold text-info pb-4">$64</h3>
+                  <p class="card-text">Category: <span class="badge bg-warning text-dark">electronics</span></p>
+                </div>
+                <div class="card-footer p-0">
+                  <div class="row m-0 p-0">
+                    <div class="col-6 p-0">
+                      <button onclick="addToCart(9,64)" id="addToCart-btn" class="buy-now btn btn-warning w-100 rounded-0 border-0">Add to cart</button>
+                    </div>
+                    <div class="col-6 p-0">
+                      <button id="details-btn" class="btn btn-info text-white w-100 rounded-0 border-0">Details</button>
+                    </div>  
+                  </div>
+              </div></div></div><div class="col" style="max-width: 26rem;"><div class="card h-100 border-0 rounded-3 card-shadow">
+                <img src="https://fakestoreapi.com/img/61U7T1koQqL._AC_SX679_.jpg" class="card-img-top product-image mx-auto p-4" alt="...">
+                <div class="card-body card-bg">
+                  <div style="min-height: 100px;">
+                    <h5 class="card-title">SanDisk SSD PLUS 1TB Internal SSD - SATA III 6 Gb/s</h5>
+                  </div>
+                  <div class="stars-outer">
+                    <div class="stars-inner" style="width: 57.99999999999999%"></div>
+                  </div>
+                  <p class="d-inline-block fw-bold ps-3 pt-2 mb-0 text-secondary"><span class="fs-3 text-dark">2.9 </span>/ 5 <span class="fw-normal">average rating</span></p>
+                  <p class="text-secondary">From <span class="fs-5 fw-bold text-black"> 470 </span> ratings</p>
+                  <h3 class="fw-bold text-info pb-4">$109</h3>
+                  <p class="card-text">Category: <span class="badge bg-warning text-dark">electronics</span></p>
+                </div>
+                <div class="card-footer p-0">
+                  <div class="row m-0 p-0">
+                    <div class="col-6 p-0">
+                      <button onclick="addToCart(10,109)" id="addToCart-btn" class="buy-now btn btn-warning w-100 rounded-0 border-0">Add to cart</button>
+                    </div>
+                    <div class="col-6 p-0">
+                      <button id="details-btn" class="btn btn-info text-white w-100 rounded-0 border-0">Details</button>
+                    </div>  
+                  </div>
+              </div></div></div><div class="col" style="max-width: 26rem;"><div class="card h-100 border-0 rounded-3 card-shadow">
+                <img src="https://fakestoreapi.com/img/71kWymZ+c+L._AC_SX679_.jpg" class="card-img-top product-image mx-auto p-4" alt="...">
+                <div class="card-body card-bg">
+                  <div style="min-height: 100px;">
+                    <h5 class="card-title">Silicon Power 256GB SSD 3D NAND A55 SLC Cache Performance Boost SATA III 2.5</h5>
+                  </div>
+                  <div class="stars-outer">
+                    <div class="stars-inner" style="width: 96%"></div>
+                  </div>
+                  <p class="d-inline-block fw-bold ps-3 pt-2 mb-0 text-secondary"><span class="fs-3 text-dark">4.8 </span>/ 5 <span class="fw-normal">average rating</span></p>
+                  <p class="text-secondary">From <span class="fs-5 fw-bold text-black"> 319 </span> ratings</p>
+                  <h3 class="fw-bold text-info pb-4">$109</h3>
+                  <p class="card-text">Category: <span class="badge bg-warning text-dark">electronics</span></p>
+                </div>
+                <div class="card-footer p-0">
+                  <div class="row m-0 p-0">
+                    <div class="col-6 p-0">
+                      <button onclick="addToCart(11,109)" id="addToCart-btn" class="buy-now btn btn-warning w-100 rounded-0 border-0">Add to cart</button>
+                    </div>
+                    <div class="col-6 p-0">
+                      <button id="details-btn" class="btn btn-info text-white w-100 rounded-0 border-0">Details</button>
+                    </div>  
+                  </div>
+              </div></div></div><div class="col" style="max-width: 26rem;"><div class="card h-100 border-0 rounded-3 card-shadow">
+                <img src="https://fakestoreapi.com/img/61mtL65D4cL._AC_SX679_.jpg" class="card-img-top product-image mx-auto p-4" alt="...">
+                <div class="card-body card-bg">
+                  <div style="min-height: 100px;">
+                    <h5 class="card-title">WD 4TB Gaming Drive Works with Playstation 4 Portable External Hard Drive</h5>
+                  </div>
+                  <div class="stars-outer">
+                    <div class="stars-inner" style="width: 96%"></div>
+                  </div>
+                  <p class="d-inline-block fw-bold ps-3 pt-2 mb-0 text-secondary"><span class="fs-3 text-dark">4.8 </span>/ 5 <span class="fw-normal">average rating</span></p>
+                  <p class="text-secondary">From <span class="fs-5 fw-bold text-black"> 400 </span> ratings</p>
+                  <h3 class="fw-bold text-info pb-4">$114</h3>
+                  <p class="card-text">Category: <span class="badge bg-warning text-dark">electronics</span></p>
+                </div>
+                <div class="card-footer p-0">
+                  <div class="row m-0 p-0">
+                    <div class="col-6 p-0">
+                      <button onclick="addToCart(12,114)" id="addToCart-btn" class="buy-now btn btn-warning w-100 rounded-0 border-0">Add to cart</button>
+                    </div>
+                    <div class="col-6 p-0">
+                      <button id="details-btn" class="btn btn-info text-white w-100 rounded-0 border-0">Details</button>
+                    </div>  
+                  </div>
+              </div></div></div><div class="col" style="max-width: 26rem;"><div class="card h-100 border-0 rounded-3 card-shadow">
+                <img src="https://fakestoreapi.com/img/81QpkIctqPL._AC_SX679_.jpg" class="card-img-top product-image mx-auto p-4" alt="...">
+                <div class="card-body card-bg">
+                  <div style="min-height: 100px;">
+                    <h5 class="card-title">Acer SB220Q bi 21.5 inches Full HD (1920 x 1080) IPS Ultra-Thin</h5>
+                  </div>
+                  <div class="stars-outer">
+                    <div class="stars-inner" style="width: 57.99999999999999%"></div>
+                  </div>
+                  <p class="d-inline-block fw-bold ps-3 pt-2 mb-0 text-secondary"><span class="fs-3 text-dark">2.9 </span>/ 5 <span class="fw-normal">average rating</span></p>
+                  <p class="text-secondary">From <span class="fs-5 fw-bold text-black"> 250 </span> ratings</p>
+                  <h3 class="fw-bold text-info pb-4">$599</h3>
+                  <p class="card-text">Category: <span class="badge bg-warning text-dark">electronics</span></p>
+                </div>
+                <div class="card-footer p-0">
+                  <div class="row m-0 p-0">
+                    <div class="col-6 p-0">
+                      <button onclick="addToCart(13,599)" id="addToCart-btn" class="buy-now btn btn-warning w-100 rounded-0 border-0">Add to cart</button>
+                    </div>
+                    <div class="col-6 p-0">
+                      <button id="details-btn" class="btn btn-info text-white w-100 rounded-0 border-0">Details</button>
+                    </div>  
+                  </div>
+              </div></div></div><div class="col" style="max-width: 26rem;"><div class="card h-100 border-0 rounded-3 card-shadow">
+                <img src="https://fakestoreapi.com/img/81Zt42ioCgL._AC_SX679_.jpg" class="card-img-top product-image mx-auto p-4" alt="...">
+                <div class="card-body card-bg">
+                  <div style="min-height: 100px;">
+                    <h5 class="card-title">Samsung 49-Inch CHG90 144Hz Curved Gaming Monitor (LC49HG90DMNXZA) – Super Ultrawide Screen QLED </h5>
+                  </div>
+                  <div class="stars-outer">
+                    <div class="stars-inner" style="width: 44.00000000000001%"></div>
+                  </div>
+                  <p class="d-inline-block fw-bold ps-3 pt-2 mb-0 text-secondary"><span class="fs-3 text-dark">2.2 </span>/ 5 <span class="fw-normal">average rating</span></p>
+                  <p class="text-secondary">From <span class="fs-5 fw-bold text-black"> 140 </span> ratings</p>
+                  <h3 class="fw-bold text-info pb-4">$999.99</h3>
+                  <p class="card-text">Category: <span class="badge bg-warning text-dark">electronics</span></p>
+                </div>
+                <div class="card-footer p-0">
+                  <div class="row m-0 p-0">
+                    <div class="col-6 p-0">
+                      <button onclick="addToCart(14,999.99)" id="addToCart-btn" class="buy-now btn btn-warning w-100 rounded-0 border-0">Add to cart</button>
+                    </div>
+                    <div class="col-6 p-0">
+                      <button id="details-btn" class="btn btn-info text-white w-100 rounded-0 border-0">Details</button>
+                    </div>  
+                  </div>
+              </div></div></div><div class="col" style="max-width: 26rem;"><div class="card h-100 border-0 rounded-3 card-shadow">
+                <img src="https://fakestoreapi.com/img/51Y5NI-I5jL._AC_UX679_.jpg" class="card-img-top product-image mx-auto p-4" alt="...">
+                <div class="card-body card-bg">
+                  <div style="min-height: 100px;">
+                    <h5 class="card-title">BIYLACLESEN Women's 3-in-1 Snowboard Jacket Winter Coats</h5>
+                  </div>
+                  <div class="stars-outer">
+                    <div class="stars-inner" style="width: 52%"></div>
+                  </div>
+                  <p class="d-inline-block fw-bold ps-3 pt-2 mb-0 text-secondary"><span class="fs-3 text-dark">2.6 </span>/ 5 <span class="fw-normal">average rating</span></p>
+                  <p class="text-secondary">From <span class="fs-5 fw-bold text-black"> 235 </span> ratings</p>
+                  <h3 class="fw-bold text-info pb-4">$56.99</h3>
+                  <p class="card-text">Category: <span class="badge bg-warning text-dark">women's clothing</span></p>
+                </div>
+                <div class="card-footer p-0">
+                  <div class="row m-0 p-0">
+                    <div class="col-6 p-0">
+                      <button onclick="addToCart(15,56.99)" id="addToCart-btn" class="buy-now btn btn-warning w-100 rounded-0 border-0">Add to cart</button>
+                    </div>
+                    <div class="col-6 p-0">
+                      <button id="details-btn" class="btn btn-info text-white w-100 rounded-0 border-0">Details</button>
+                    </div>  
+                  </div>
+              </div></div></div><div class="col" style="max-width: 26rem;"><div class="card h-100 border-0 rounded-3 card-shadow">
+                <img src="https://fakestoreapi.com/img/81XH0e8fefL._AC_UY879_.jpg" class="card-img-top product-image mx-auto p-4" alt="...">
+                <div class="card-body card-bg">
+                  <div style="min-height: 100px;">
+                    <h5 class="card-title">Lock and Love Women's Removable Hooded Faux Leather Moto Biker Jacket</h5>
+                  </div>
+                  <div class="stars-outer">
+                    <div class="stars-inner" style="width: 57.99999999999999%"></div>
+                  </div>
+                  <p class="d-inline-block fw-bold ps-3 pt-2 mb-0 text-secondary"><span class="fs-3 text-dark">2.9 </span>/ 5 <span class="fw-normal">average rating</span></p>
+                  <p class="text-secondary">From <span class="fs-5 fw-bold text-black"> 340 </span> ratings</p>
+                  <h3 class="fw-bold text-info pb-4">$29.95</h3>
+                  <p class="card-text">Category: <span class="badge bg-warning text-dark">women's clothing</span></p>
+                </div>
+                <div class="card-footer p-0">
+                  <div class="row m-0 p-0">
+                    <div class="col-6 p-0">
+                      <button onclick="addToCart(16,29.95)" id="addToCart-btn" class="buy-now btn btn-warning w-100 rounded-0 border-0">Add to cart</button>
+                    </div>
+                    <div class="col-6 p-0">
+                      <button id="details-btn" class="btn btn-info text-white w-100 rounded-0 border-0">Details</button>
+                    </div>  
+                  </div>
+              </div></div></div><div class="col" style="max-width: 26rem;"><div class="card h-100 border-0 rounded-3 card-shadow">
+                <img src="https://fakestoreapi.com/img/71HblAHs5xL._AC_UY879_-2.jpg" class="card-img-top product-image mx-auto p-4" alt="...">
+                <div class="card-body card-bg">
+                  <div style="min-height: 100px;">
+                    <h5 class="card-title">Rain Jacket Women Windbreaker Striped Climbing Raincoats</h5>
+                  </div>
+                  <div class="stars-outer">
+                    <div class="stars-inner" style="width: 76%"></div>
+                  </div>
+                  <p class="d-inline-block fw-bold ps-3 pt-2 mb-0 text-secondary"><span class="fs-3 text-dark">3.8 </span>/ 5 <span class="fw-normal">average rating</span></p>
+                  <p class="text-secondary">From <span class="fs-5 fw-bold text-black"> 679 </span> ratings</p>
+                  <h3 class="fw-bold text-info pb-4">$39.99</h3>
+                  <p class="card-text">Category: <span class="badge bg-warning text-dark">women's clothing</span></p>
+                </div>
+                <div class="card-footer p-0">
+                  <div class="row m-0 p-0">
+                    <div class="col-6 p-0">
+                      <button onclick="addToCart(17,39.99)" id="addToCart-btn" class="buy-now btn btn-warning w-100 rounded-0 border-0">Add to cart</button>
+                    </div>
+                    <div class="col-6 p-0">
+                      <button id="details-btn" class="btn btn-info text-white w-100 rounded-0 border-0">Details</button>
+                    </div>  
+                  </div>
+              </div></div></div><div class="col" style="max-width: 26rem;"><div class="card h-100 border-0 rounded-3 card-shadow">
+                <img src="https://fakestoreapi.com/img/71z3kpMAYsL._AC_UY879_.jpg" class="card-img-top product-image mx-auto p-4" alt="...">
+                <div class="card-body card-bg">
+                  <div style="min-height: 100px;">
+                    <h5 class="card-title">MBJ Women's Solid Short Sleeve Boat Neck V </h5>
+                  </div>
+                  <div class="stars-outer">
+                    <div class="stars-inner" style="width: 94%"></div>
+                  </div>
+                  <p class="d-inline-block fw-bold ps-3 pt-2 mb-0 text-secondary"><span class="fs-3 text-dark">4.7 </span>/ 5 <span class="fw-normal">average rating</span></p>
+                  <p class="text-secondary">From <span class="fs-5 fw-bold text-black"> 130 </span> ratings</p>
+                  <h3 class="fw-bold text-info pb-4">$9.85</h3>
+                  <p class="card-text">Category: <span class="badge bg-warning text-dark">women's clothing</span></p>
+                </div>
+                <div class="card-footer p-0">
+                  <div class="row m-0 p-0">
+                    <div class="col-6 p-0">
+                      <button onclick="addToCart(18,9.85)" id="addToCart-btn" class="buy-now btn btn-warning w-100 rounded-0 border-0">Add to cart</button>
+                    </div>
+                    <div class="col-6 p-0">
+                      <button id="details-btn" class="btn btn-info text-white w-100 rounded-0 border-0">Details</button>
+                    </div>  
+                  </div>
+              </div></div></div><div class="col" style="max-width: 26rem;"><div class="card h-100 border-0 rounded-3 card-shadow">
+                <img src="https://fakestoreapi.com/img/51eg55uWmdL._AC_UX679_.jpg" class="card-img-top product-image mx-auto p-4" alt="...">
+                <div class="card-body card-bg">
+                  <div style="min-height: 100px;">
+                    <h5 class="card-title">Opna Women's Short Sleeve Moisture</h5>
+                  </div>
+                  <div class="stars-outer">
+                    <div class="stars-inner" style="width: 90%"></div>
+                  </div>
+                  <p class="d-inline-block fw-bold ps-3 pt-2 mb-0 text-secondary"><span class="fs-3 text-dark">4.5 </span>/ 5 <span class="fw-normal">average rating</span></p>
+                  <p class="text-secondary">From <span class="fs-5 fw-bold text-black"> 146 </span> ratings</p>
+                  <h3 class="fw-bold text-info pb-4">$7.95</h3>
+                  <p class="card-text">Category: <span class="badge bg-warning text-dark">women's clothing</span></p>
+                </div>
+                <div class="card-footer p-0">
+                  <div class="row m-0 p-0">
+                    <div class="col-6 p-0">
+                      <button onclick="addToCart(19,7.95)" id="addToCart-btn" class="buy-now btn btn-warning w-100 rounded-0 border-0">Add to cart</button>
+                    </div>
+                    <div class="col-6 p-0">
+                      <button id="details-btn" class="btn btn-info text-white w-100 rounded-0 border-0">Details</button>
+                    </div>  
+                  </div>
+              </div></div></div><div class="col" style="max-width: 26rem;"><div class="card h-100 border-0 rounded-3 card-shadow">
+                <img src="https://fakestoreapi.com/img/61pHAEJ4NML._AC_UX679_.jpg" class="card-img-top product-image mx-auto p-4" alt="...">
+                <div class="card-body card-bg">
+                  <div style="min-height: 100px;">
+                    <h5 class="card-title">DANVOUY Womens T Shirt Casual Cotton Short</h5>
+                  </div>
+                  <div class="stars-outer">
+                    <div class="stars-inner" style="width: 72%"></div>
+                  </div>
+                  <p class="d-inline-block fw-bold ps-3 pt-2 mb-0 text-secondary"><span class="fs-3 text-dark">3.6 </span>/ 5 <span class="fw-normal">average rating</span></p>
+                  <p class="text-secondary">From <span class="fs-5 fw-bold text-black"> 145 </span> ratings</p>
+                  <h3 class="fw-bold text-info pb-4">$12.99</h3>
+                  <p class="card-text">Category: <span class="badge bg-warning text-dark">women's clothing</span></p>
+                </div>
+                <div class="card-footer p-0">
+                  <div class="row m-0 p-0">
+                    <div class="col-6 p-0">
+                      <button onclick="addToCart(20,12.99)" id="addToCart-btn" class="buy-now btn btn-warning w-100 rounded-0 border-0">Add to cart</button>
+                    </div>
+                    <div class="col-6 p-0">
+                      <button id="details-btn" class="btn btn-info text-white w-100 rounded-0 border-0">Details</button>
+                    </div>  
+                  </div>
+              </div></div></div></div>
+        </div>
+        <div class="col-md-3 col-lg-3 col-sm-5 cart-main">
+          <div class="cart" id="my-cart">
+            <h1>My-Cart</h1><table class="table">
+              <thead>
+                
+                <tr>
+                  <th scope="col"></th>
+                  <th scope="col"></th>
+                  <th scope="col"></th>
+                  <th scope="col"></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>Total Added-Products:</th>
+                  <td><span id="total-Products">0</span></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th>Price:</th>
+                  <td>$ <span id="price">0</span></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th>Delivery-Charge:</th>
+                  <td>$ <span id="delivery-charge">20</span></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th>Total-Tax:</th>
+                  <td>$ <span id="total-tax">0</span></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th scope="row">Total</th>
+                  <td colspan="2">$ <span id="total">0</span></td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="parces">
+              <button class="btn btn-info text-white w-100">Buy Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+  
+    <!-- add javascript  file  -->
+    <script src="./js/app.js"></script>
+  
+  
+  </body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
